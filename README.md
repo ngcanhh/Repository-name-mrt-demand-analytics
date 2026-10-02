@@ -57,6 +57,19 @@ The Power BI dashboard includes:
 
 ![Monthly MRT trends dashboard](outputs/figures/monthly_trends.png)
 
+## Interactive web app
+
+The project also includes a Streamlit analytics application. The app recalculates KPIs, peak hour, station rankings, charts and operational recommendations based on the selected month, MRT line and day type.
+
+Run locally:
+
+```powershell
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+The app also supports downloading the currently filtered dataset as a CSV file.
+
 ## Project structure
 
 ```text
