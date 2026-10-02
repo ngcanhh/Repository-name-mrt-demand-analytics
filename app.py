@@ -32,6 +32,14 @@ def load_growth() -> pd.DataFrame:
 data = load_data()
 growth = load_growth()
 
+
+def format_compact(value: float) -> str:
+    if abs(value) >= 1_000_000:
+        return f"{value / 1_000_000:.1f}M"
+    if abs(value) >= 1_000:
+        return f"{value / 1_000:.1f}K"
+    return f"{value:,.0f}"
+
 st.title("Singapore MRT Demand & Station Operations Analytics")
 st.caption("Interactive analysis using LTA DataMall passenger volume data")
 
@@ -79,10 +87,10 @@ top_station = (
 )
 
 metric_1, metric_2, metric_3, metric_4 = st.columns(4)
-metric_1.metric("Total activity", f"{total_activity:,.0f}")
+metric_1.metric("Total activity", format_compact(total_activity))
 metric_2.metric("Stations covered", f"{station_count:,}")
 metric_3.metric("Peak hour", f"{peak_hour:02d}:00")
-metric_4.metric("Top station", str(top_station))
+metric_4.metric("Top station", str(top_station)[:18])
 
 st.divider()
 
