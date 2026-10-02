@@ -5,7 +5,7 @@ import pandas as pd
 
 DEMAND_PATH = Path("data/processed/mrt_station_demand_multi_month.csv")
 STATION_PATH = Path(
-    "data/raw/reference/station_codes/Train Station Codes and Chinese Names.xls"
+    "data/reference/Train Station Codes and Chinese Names.xls"
 )
 OUTPUT_PATH = Path("data/processed/mrt_station_demand_multi_month_enriched.csv")
 
