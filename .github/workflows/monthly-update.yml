@@ -28,6 +28,9 @@ jobs:
           LTA_ACCOUNT_KEY: ${{ secrets.LTA_ACCOUNT_KEY }}
         run: python src/update_monthly_pipeline.py
 
+      - name: Validate processed data
+        run: python src/validate_monthly_data.py
+
       - name: Commit updated outputs
         run: |
           git config user.name "github-actions[bot]"
