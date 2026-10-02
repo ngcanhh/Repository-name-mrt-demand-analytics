@@ -15,7 +15,7 @@ This project analyzes Singapore MRT station activity using passenger volume data
 
 - Source: LTA DataMall
 - Dataset: Passenger Volume by Train Stations
-- Current analysis period: August 2026
+- Current analysis period: June–August 2026
 - Granularity: station, hour, and day type
 - Measures: total tap-in volume and total tap-out volume
 
@@ -27,7 +27,7 @@ tap-in volume + tap-out volume
 
 It represents station activity, not unique passenger counts.
 
-## Key findings from August 2026
+## Key findings from the current analysis period
 
 - Jurong East recorded the highest total station activity.
 - Orchard and Woodlands were also among the highest-activity stations.
@@ -59,7 +59,9 @@ The Power BI dashboard includes:
 
 ## Interactive web app
 
-The project also includes a Streamlit analytics application. The app recalculates KPIs, peak hour, station rankings, charts and operational recommendations based on the selected month, MRT line and day type.
+The project also includes a Streamlit analytics application. The app recalculates KPIs, peak hour, station rankings, monthly trends, station movement alerts and operational recommendations based on the selected month, MRT line and day type.
+
+The data pipeline includes automated quality checks for required columns, missing station metadata, negative volumes and the total-volume calculation. A GitHub Actions workflow can download the latest available month, rebuild the processed tables and publish the updated outputs.
 
 ### Live app
 
@@ -74,6 +76,10 @@ streamlit run app.py
 
 The app also supports downloading the currently filtered dataset as a CSV file.
 
+### Automated update workflow
+
+The monthly workflow runs on GitHub Actions and uses an `LTA_ACCOUNT_KEY` repository secret. It downloads the latest available LTA month, combines all tracked monthly files, enriches station metadata, recalculates month-over-month growth and validates the resulting dataset before committing updated outputs.
+
 ## Project structure
 
 ```text
@@ -87,15 +93,13 @@ sql/        SQL analysis files
 
 ## Limitations
 
-- The current dashboard covers one month only.
+- The current analysis covers three available months: June–August 2026.
 - Activity is measured as combined tap-in and tap-out volume.
 - The data does not represent unique passengers.
 - A few newer station codes were assigned inferred line labels when they were not available in the older station reference file.
 
 ## Future improvements
 
-- Download and combine multiple months through the LTA API.
-- Add month-over-month growth analysis.
-- Add a refreshable data pipeline.
-- Deploy the dashboard as a Streamlit web application.
+- Extend the historical window as additional LTA months become available.
+- Add anomaly detection and demand forecasting after a longer time series is available.
 - Add weather and public holiday analysis.
