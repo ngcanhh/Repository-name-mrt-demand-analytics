@@ -63,7 +63,7 @@ The project also includes a Streamlit analytics application. The app recalculate
 
 ### Live app
 
-[Open the Singapore MRT Demand Analytics app](https://repository-name-mrt-demand-analytics-kaxxjau1srvzwrrkdat6s.streamlit.app/)
+[Open the Singapore MRT Demand Analytics app](https://repository-name-mrt-demand-analytics-kaxxjaulszrvzwrrkdat6s.streamlit.app/)
 
 Run locally:
 
