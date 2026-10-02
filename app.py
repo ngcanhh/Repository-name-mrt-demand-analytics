@@ -139,6 +139,7 @@ fig_trend = px.line(
     title="Monthly MRT Activity Trend",
     labels={"total_volume": "Activity", "month_label": "Month"},
 )
+fig_trend.update_xaxes(type="category", categoryorder="category ascending")
 st.plotly_chart(fig_trend, width="stretch")
 
 st.subheader("Operational recommendations")
