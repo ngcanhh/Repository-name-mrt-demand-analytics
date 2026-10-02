@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import calendar
 import subprocess
 import sys
 from datetime import date
@@ -33,7 +32,13 @@ def main() -> None:
         print(f"Data for {year_month} already exists; rebuilding processed outputs.")
     else:
         print(f"Downloading LTA data for {year_month}...")
-        download_month(year_month)
+        try:
+            download_month(year_month)
+        except Exception as exc:
+            # LTA may publish the previous month later than the scheduled run.
+            # Keep the workflow green and rebuild from the latest available files.
+            print(f"No data available for {year_month}: {exc}")
+            print("Continuing with the latest available monthly files.")
 
     run("combine_monthly_data.py")
     run("merge_multi_month_metadata.py")
