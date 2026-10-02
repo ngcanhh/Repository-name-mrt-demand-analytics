@@ -3,18 +3,32 @@ from pathlib import Path
 import pandas as pd
 
 
-INPUT_FILES = [
-    Path("data/raw/monthly/202607/transport_node_train_202607.csv"),
-    Path("data/raw/lta_train_volume/transport_node_train_202608.csv"),
+RAW_ROOTS = [
+    Path("data/raw/monthly"),
+    Path("data/raw/lta_train_volume"),
 ]
 OUTPUT_PATH = Path("data/processed/mrt_station_demand_multi_month.csv")
 
 
+def discover_input_files() -> list[Path]:
+    """Find every downloaded monthly LTA CSV without hard-coding month names."""
+    files = set()
+    for root in RAW_ROOTS:
+        if root.exists():
+            files.update(root.rglob("transport_node_train_*.csv"))
+    return sorted(files)
+
+
 def main() -> None:
+    input_files = discover_input_files()
+    if not input_files:
+        raise FileNotFoundError(
+            "No monthly LTA CSV files found under data/raw/monthly or "
+            "data/raw/lta_train_volume"
+        )
+
     frames = []
-    for path in INPUT_FILES:
-        if not path.exists():
-            raise FileNotFoundError(f"Missing input file: {path}")
+    for path in input_files:
         frame = pd.read_csv(path)
         frames.append(frame)
         print(f"Loaded {path.name}: {len(frame)} rows")
