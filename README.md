@@ -47,6 +47,16 @@ The Power BI dashboard includes:
 - Activity by MRT line
 - Filters for line and day type
 
+### Dashboard preview
+
+#### August 2026 snapshot
+
+![August 2026 MRT dashboard](outputs/figures/dashboard_snapshot.png)
+
+#### Monthly trends
+
+![Monthly MRT trends dashboard](outputs/figures/monthly_trends.png)
+
 ## Project structure
 
 ```text
