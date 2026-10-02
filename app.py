@@ -142,6 +142,57 @@ fig_trend = px.line(
 fig_trend.update_xaxes(type="category", categoryorder="category ascending")
 st.plotly_chart(fig_trend, width="stretch")
 
+st.subheader("Monthly movement alerts")
+trend_months = sorted(filtered["month_label"].unique())
+if len(trend_months) >= 2:
+    previous_label, latest_label = trend_months[-2:]
+    station_monthly = (
+        filtered.groupby(["month_label", "station_name", "line_name"], as_index=False)[
+            "total_volume"
+        ]
+        .sum()
+        .pivot_table(
+            index=["station_name", "line_name"],
+            columns="month_label",
+            values="total_volume",
+            fill_value=0,
+        )
+        .reset_index()
+    )
+    station_monthly["absolute_change"] = (
+        station_monthly[latest_label] - station_monthly[previous_label]
+    )
+    station_monthly["percent_change"] = station_monthly.apply(
+        lambda row: row["absolute_change"] / row[previous_label] * 100
+        if row[previous_label] > 0
+        else None,
+        axis=1,
+    )
+    movement = station_monthly.dropna(subset=["percent_change"])
+    increase, decrease = st.columns(2)
+    with increase:
+        st.markdown(f"**Largest increases: {previous_label} → {latest_label}**")
+        st.dataframe(
+            movement.sort_values("percent_change", ascending=False)
+            [["station_name", "line_name", "percent_change"]]
+            .head(5)
+            .assign(percent_change=lambda frame: frame["percent_change"].round(1)),
+            width="stretch",
+            hide_index=True,
+        )
+    with decrease:
+        st.markdown(f"**Largest decreases: {previous_label} → {latest_label}**")
+        st.dataframe(
+            movement.sort_values("percent_change")
+            [["station_name", "line_name", "percent_change"]]
+            .head(5)
+            .assign(percent_change=lambda frame: frame["percent_change"].round(1)),
+            width="stretch",
+            hide_index=True,
+        )
+else:
+    st.info("Select at least two months to compare station movements.")
+
 st.subheader("Operational recommendations")
 
 line_summary = (
