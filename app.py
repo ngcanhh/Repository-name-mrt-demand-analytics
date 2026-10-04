@@ -6,7 +6,6 @@ import streamlit as st
 
 
 DATA_PATH = Path("data/processed/mrt_station_demand_multi_month_enriched.csv")
-GROWTH_PATH = Path("outputs/tables/station_monthly_growth.csv")
 
 
 st.set_page_config(
@@ -24,13 +23,7 @@ def load_data() -> pd.DataFrame:
     return data
 
 
-@st.cache_data
-def load_growth() -> pd.DataFrame:
-    return pd.read_csv(GROWTH_PATH)
-
-
 data = load_data()
-growth = load_growth()
 
 
 def format_compact(value: float) -> str:
@@ -213,12 +206,15 @@ weekend_activity = filtered.loc[
 
 recommendations = [
     f"Prioritize monitoring for **{top_line}**, which has the highest activity under the current filters.",
-    f"Focus operational resources around **{peak_hour:02d}:00**, the highest-demand hour in the selected data.",
     f"Monitor **{top_station}**, currently the highest-activity station under the selected filters.",
 ]
 if weekday_activity > weekend_activity > 0:
     recommendations.append(
-        "Weekday activity is higher than weekend/holiday activity; prioritize weekday peak-period staffing."
+        f"Prioritize weekday staffing around **{peak_hour:02d}:00**, the highest-demand period in the selected data."
+    )
+else:
+    recommendations.append(
+        f"Focus resources around **{peak_hour:02d}:00**, the highest-demand period in the selected data."
     )
 
 for recommendation in recommendations:
@@ -230,20 +226,6 @@ st.download_button(
     data=filtered.to_csv(index=False).encode("utf-8"),
     file_name="mrt_filtered_analysis.csv",
     mime="text/csv",
-)
-
-st.subheader("Station month-over-month growth")
-growth_view = growth[growth["growth_quality"] == "reliable"].copy()
-growth_view = growth_view[growth_view["line_name"].isin(selected_lines)]
-growth_view["percent_change"] = growth_view["percent_change"].round(2)
-st.dataframe(
-    growth_view[
-        ["station_name", "line_name", "percent_change", "absolute_change"]
-    ]
-    .sort_values("percent_change", ascending=False)
-    .rename(columns={"percent_change": "% change", "absolute_change": "Activity change"}),
-    width="stretch",
-    hide_index=True,
 )
 
 st.caption(
