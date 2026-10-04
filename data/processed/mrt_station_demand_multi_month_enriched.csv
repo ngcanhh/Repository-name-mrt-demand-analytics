@@ -8396,164 +8396,164 @@ year_month,day_type,hour,transport_type,station_code,tap_in_volume,tap_out_volum
 2026-07-01,weekends/holiday,21,TRAIN,CC3,7949,1914,9863,21:00,Esplanade,Circle Line
 2026-07-01,weekends/holiday,22,TRAIN,CC3,6106,724,6830,22:00,Esplanade,Circle Line
 2026-07-01,weekends/holiday,23,TRAIN,CC3,1574,181,1755,23:00,Esplanade,Circle Line
-2026-07-01,weekday,0,TRAIN,CC30,0,2,2,00:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,5,TRAIN,CC30,15,3,18,05:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,6,TRAIN,CC30,59,89,148,06:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,7,TRAIN,CC30,375,194,569,07:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,8,TRAIN,CC30,166,182,348,08:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,9,TRAIN,CC30,149,130,279,09:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,10,TRAIN,CC30,154,154,308,10:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,11,TRAIN,CC30,167,159,326,11:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,12,TRAIN,CC30,217,271,488,12:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,13,TRAIN,CC30,231,203,434,13:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,14,TRAIN,CC30,247,312,559,14:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,15,TRAIN,CC30,262,277,539,15:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,16,TRAIN,CC30,251,222,473,16:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,17,TRAIN,CC30,250,238,488,17:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,18,TRAIN,CC30,431,286,717,18:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,19,TRAIN,CC30,217,191,408,19:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,20,TRAIN,CC30,124,125,249,20:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,21,TRAIN,CC30,100,114,214,21:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,22,TRAIN,CC30,61,104,165,22:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,23,TRAIN,CC30,18,40,58,23:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekends/holiday,0,TRAIN,CC30,0,1,1,00:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekends/holiday,6,TRAIN,CC30,53,19,72,06:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekends/holiday,7,TRAIN,CC30,56,65,121,07:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekends/holiday,8,TRAIN,CC30,38,51,89,08:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekends/holiday,9,TRAIN,CC30,77,71,148,09:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekends/holiday,10,TRAIN,CC30,120,148,268,10:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekends/holiday,11,TRAIN,CC30,191,151,342,11:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekends/holiday,12,TRAIN,CC30,171,189,360,12:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekends/holiday,13,TRAIN,CC30,219,259,478,13:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekends/holiday,14,TRAIN,CC30,262,329,591,14:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekends/holiday,15,TRAIN,CC30,322,339,661,15:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekends/holiday,16,TRAIN,CC30,273,302,575,16:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekends/holiday,17,TRAIN,CC30,266,267,533,17:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekends/holiday,18,TRAIN,CC30,244,164,408,18:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekends/holiday,19,TRAIN,CC30,152,135,287,19:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekends/holiday,20,TRAIN,CC30,66,92,158,20:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekends/holiday,21,TRAIN,CC30,28,77,105,21:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekends/holiday,22,TRAIN,CC30,21,41,62,22:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekends/holiday,23,TRAIN,CC30,14,15,29,23:00,Unknown station CC30,Circle Line (inferred)
-2026-07-01,weekday,5,TRAIN,CC31,50,6,56,05:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekday,6,TRAIN,CC31,1174,135,1309,06:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekday,7,TRAIN,CC31,2399,1063,3462,07:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekday,8,TRAIN,CC31,4078,1759,5837,08:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekday,9,TRAIN,CC31,3153,1622,4775,09:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekday,10,TRAIN,CC31,1693,1038,2731,10:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekday,11,TRAIN,CC31,1752,1108,2860,11:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekday,12,TRAIN,CC31,2074,1603,3677,12:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekday,13,TRAIN,CC31,1951,2084,4035,13:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekday,14,TRAIN,CC31,1490,2007,3497,14:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekday,15,TRAIN,CC31,1615,1974,3589,15:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekday,16,TRAIN,CC31,1845,2005,3850,16:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekday,17,TRAIN,CC31,2917,2712,5629,17:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekday,18,TRAIN,CC31,3960,4364,8324,18:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekday,19,TRAIN,CC31,2221,3472,5693,19:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekday,20,TRAIN,CC31,1096,2577,3673,20:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekday,21,TRAIN,CC31,693,2496,3189,21:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekday,22,TRAIN,CC31,574,2072,2646,22:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekday,23,TRAIN,CC31,194,903,1097,23:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,0,TRAIN,CC31,0,1,1,00:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,5,TRAIN,CC31,12,0,12,05:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,6,TRAIN,CC31,158,28,186,06:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,7,TRAIN,CC31,337,149,486,07:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,8,TRAIN,CC31,544,203,747,08:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,9,TRAIN,CC31,725,416,1141,09:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,10,TRAIN,CC31,928,778,1706,10:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,11,TRAIN,CC31,1124,948,2072,11:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,12,TRAIN,CC31,1237,1083,2320,12:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,13,TRAIN,CC31,1124,1306,2430,13:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,14,TRAIN,CC31,1328,1815,3143,14:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,15,TRAIN,CC31,1478,1712,3190,15:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,16,TRAIN,CC31,1667,1539,3206,16:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,17,TRAIN,CC31,1948,1405,3353,17:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,18,TRAIN,CC31,1434,1172,2606,18:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,19,TRAIN,CC31,1087,1128,2215,19:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,20,TRAIN,CC31,598,1227,1825,20:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,21,TRAIN,CC31,345,1184,1529,21:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,22,TRAIN,CC31,324,842,1166,22:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekends/holiday,23,TRAIN,CC31,233,329,562,23:00,Unknown station CC31,Circle Line (inferred)
-2026-07-01,weekday,0,TRAIN,CC32,0,2,2,00:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,5,TRAIN,CC32,11,3,14,05:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,6,TRAIN,CC32,111,214,325,06:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,7,TRAIN,CC32,383,1223,1606,07:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,8,TRAIN,CC32,924,4447,5371,08:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,9,TRAIN,CC32,939,4200,5139,09:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,10,TRAIN,CC32,925,1427,2352,10:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,11,TRAIN,CC32,1658,856,2514,11:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,12,TRAIN,CC32,1837,1618,3455,12:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,13,TRAIN,CC32,1266,2016,3282,13:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,14,TRAIN,CC32,1213,1478,2691,14:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,15,TRAIN,CC32,980,1139,2119,15:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,16,TRAIN,CC32,1554,1002,2556,16:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,17,TRAIN,CC32,4770,1672,6442,17:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,18,TRAIN,CC32,7755,2499,10254,18:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,19,TRAIN,CC32,2811,1504,4315,19:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,20,TRAIN,CC32,1203,1391,2594,20:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,21,TRAIN,CC32,930,1266,2196,21:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,22,TRAIN,CC32,546,858,1404,22:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,23,TRAIN,CC32,154,298,452,23:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,0,TRAIN,CC32,0,2,2,00:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,5,TRAIN,CC32,1,1,2,05:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,6,TRAIN,CC32,33,31,64,06:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,7,TRAIN,CC32,75,73,148,07:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,8,TRAIN,CC32,123,132,255,08:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,9,TRAIN,CC32,191,195,386,09:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,10,TRAIN,CC32,344,339,683,10:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,11,TRAIN,CC32,496,452,948,11:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,12,TRAIN,CC32,552,525,1077,12:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,13,TRAIN,CC32,513,530,1043,13:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,14,TRAIN,CC32,679,629,1308,14:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,15,TRAIN,CC32,660,695,1355,15:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,16,TRAIN,CC32,681,696,1377,16:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,17,TRAIN,CC32,662,695,1357,17:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,18,TRAIN,CC32,589,675,1264,18:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,19,TRAIN,CC32,540,473,1013,19:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,20,TRAIN,CC32,345,591,936,20:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,21,TRAIN,CC32,201,718,919,21:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,22,TRAIN,CC32,141,396,537,22:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekends/holiday,23,TRAIN,CC32,52,117,169,23:00,Unknown station CC32,Circle Line (inferred)
-2026-07-01,weekday,0,TRAIN,CC34/DT16,1307,419,1726,00:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekday,5,TRAIN,CC34/DT16,1037,184,1221,05:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekday,6,TRAIN,CC34/DT16,5346,18285,23631,06:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekday,7,TRAIN,CC34/DT16,8489,21776,30265,07:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekday,8,TRAIN,CC34/DT16,8313,31240,39553,08:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekday,9,TRAIN,CC34/DT16,5928,32232,38160,09:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekday,10,TRAIN,CC34/DT16,7307,26547,33854,10:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekday,11,TRAIN,CC34/DT16,12064,28103,40167,11:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekday,12,TRAIN,CC34/DT16,15173,30176,45349,12:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekday,13,TRAIN,CC34/DT16,20272,30736,51008,13:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekday,14,TRAIN,CC34/DT16,21493,29495,50988,14:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekday,15,TRAIN,CC34/DT16,27331,23773,51104,15:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekday,16,TRAIN,CC34/DT16,28502,23894,52396,16:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekday,17,TRAIN,CC34/DT16,38674,29029,67703,17:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekday,18,TRAIN,CC34/DT16,45783,38440,84223,18:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekday,19,TRAIN,CC34/DT16,37241,39096,76337,19:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekday,20,TRAIN,CC34/DT16,68351,24092,92443,20:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekday,21,TRAIN,CC34/DT16,64293,15924,80217,21:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekday,22,TRAIN,CC34/DT16,45640,12401,58041,22:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekday,23,TRAIN,CC34/DT16,27567,4034,31601,23:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,0,TRAIN,CC34/DT16,469,197,666,00:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,5,TRAIN,CC34/DT16,142,33,175,05:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,6,TRAIN,CC34/DT16,2621,4422,7043,06:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,7,TRAIN,CC34/DT16,3187,5379,8566,07:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,8,TRAIN,CC34/DT16,2835,8461,11296,08:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,9,TRAIN,CC34/DT16,2251,10853,13104,09:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,10,TRAIN,CC34/DT16,5115,13582,18697,10:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,11,TRAIN,CC34/DT16,5576,17542,23118,11:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,12,TRAIN,CC34/DT16,7109,15716,22825,12:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,13,TRAIN,CC34/DT16,13215,16889,30104,13:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,14,TRAIN,CC34/DT16,11714,18048,29762,14:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,15,TRAIN,CC34/DT16,16356,16231,32587,15:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,16,TRAIN,CC34/DT16,17381,15012,32393,16:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,17,TRAIN,CC34/DT16,19448,15251,34699,17:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,18,TRAIN,CC34/DT16,20107,16260,36367,18:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,19,TRAIN,CC34/DT16,18732,16328,35060,19:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,20,TRAIN,CC34/DT16,31894,11342,43236,20:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,21,TRAIN,CC34/DT16,28803,6853,35656,21:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,22,TRAIN,CC34/DT16,19800,4490,24290,22:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-07-01,weekends/holiday,23,TRAIN,CC34/DT16,11442,1783,13225,23:00,Unknown station CC34/DT16,Circle Line (inferred)
+2026-07-01,weekday,0,TRAIN,CC30,0,2,2,00:00,Keppel,Circle Line
+2026-07-01,weekday,5,TRAIN,CC30,15,3,18,05:00,Keppel,Circle Line
+2026-07-01,weekday,6,TRAIN,CC30,59,89,148,06:00,Keppel,Circle Line
+2026-07-01,weekday,7,TRAIN,CC30,375,194,569,07:00,Keppel,Circle Line
+2026-07-01,weekday,8,TRAIN,CC30,166,182,348,08:00,Keppel,Circle Line
+2026-07-01,weekday,9,TRAIN,CC30,149,130,279,09:00,Keppel,Circle Line
+2026-07-01,weekday,10,TRAIN,CC30,154,154,308,10:00,Keppel,Circle Line
+2026-07-01,weekday,11,TRAIN,CC30,167,159,326,11:00,Keppel,Circle Line
+2026-07-01,weekday,12,TRAIN,CC30,217,271,488,12:00,Keppel,Circle Line
+2026-07-01,weekday,13,TRAIN,CC30,231,203,434,13:00,Keppel,Circle Line
+2026-07-01,weekday,14,TRAIN,CC30,247,312,559,14:00,Keppel,Circle Line
+2026-07-01,weekday,15,TRAIN,CC30,262,277,539,15:00,Keppel,Circle Line
+2026-07-01,weekday,16,TRAIN,CC30,251,222,473,16:00,Keppel,Circle Line
+2026-07-01,weekday,17,TRAIN,CC30,250,238,488,17:00,Keppel,Circle Line
+2026-07-01,weekday,18,TRAIN,CC30,431,286,717,18:00,Keppel,Circle Line
+2026-07-01,weekday,19,TRAIN,CC30,217,191,408,19:00,Keppel,Circle Line
+2026-07-01,weekday,20,TRAIN,CC30,124,125,249,20:00,Keppel,Circle Line
+2026-07-01,weekday,21,TRAIN,CC30,100,114,214,21:00,Keppel,Circle Line
+2026-07-01,weekday,22,TRAIN,CC30,61,104,165,22:00,Keppel,Circle Line
+2026-07-01,weekday,23,TRAIN,CC30,18,40,58,23:00,Keppel,Circle Line
+2026-07-01,weekends/holiday,0,TRAIN,CC30,0,1,1,00:00,Keppel,Circle Line
+2026-07-01,weekends/holiday,6,TRAIN,CC30,53,19,72,06:00,Keppel,Circle Line
+2026-07-01,weekends/holiday,7,TRAIN,CC30,56,65,121,07:00,Keppel,Circle Line
+2026-07-01,weekends/holiday,8,TRAIN,CC30,38,51,89,08:00,Keppel,Circle Line
+2026-07-01,weekends/holiday,9,TRAIN,CC30,77,71,148,09:00,Keppel,Circle Line
+2026-07-01,weekends/holiday,10,TRAIN,CC30,120,148,268,10:00,Keppel,Circle Line
+2026-07-01,weekends/holiday,11,TRAIN,CC30,191,151,342,11:00,Keppel,Circle Line
+2026-07-01,weekends/holiday,12,TRAIN,CC30,171,189,360,12:00,Keppel,Circle Line
+2026-07-01,weekends/holiday,13,TRAIN,CC30,219,259,478,13:00,Keppel,Circle Line
+2026-07-01,weekends/holiday,14,TRAIN,CC30,262,329,591,14:00,Keppel,Circle Line
+2026-07-01,weekends/holiday,15,TRAIN,CC30,322,339,661,15:00,Keppel,Circle Line
+2026-07-01,weekends/holiday,16,TRAIN,CC30,273,302,575,16:00,Keppel,Circle Line
+2026-07-01,weekends/holiday,17,TRAIN,CC30,266,267,533,17:00,Keppel,Circle Line
+2026-07-01,weekends/holiday,18,TRAIN,CC30,244,164,408,18:00,Keppel,Circle Line
+2026-07-01,weekends/holiday,19,TRAIN,CC30,152,135,287,19:00,Keppel,Circle Line
+2026-07-01,weekends/holiday,20,TRAIN,CC30,66,92,158,20:00,Keppel,Circle Line
+2026-07-01,weekends/holiday,21,TRAIN,CC30,28,77,105,21:00,Keppel,Circle Line
+2026-07-01,weekends/holiday,22,TRAIN,CC30,21,41,62,22:00,Keppel,Circle Line
+2026-07-01,weekends/holiday,23,TRAIN,CC30,14,15,29,23:00,Keppel,Circle Line
+2026-07-01,weekday,5,TRAIN,CC31,50,6,56,05:00,Cantonment,Circle Line
+2026-07-01,weekday,6,TRAIN,CC31,1174,135,1309,06:00,Cantonment,Circle Line
+2026-07-01,weekday,7,TRAIN,CC31,2399,1063,3462,07:00,Cantonment,Circle Line
+2026-07-01,weekday,8,TRAIN,CC31,4078,1759,5837,08:00,Cantonment,Circle Line
+2026-07-01,weekday,9,TRAIN,CC31,3153,1622,4775,09:00,Cantonment,Circle Line
+2026-07-01,weekday,10,TRAIN,CC31,1693,1038,2731,10:00,Cantonment,Circle Line
+2026-07-01,weekday,11,TRAIN,CC31,1752,1108,2860,11:00,Cantonment,Circle Line
+2026-07-01,weekday,12,TRAIN,CC31,2074,1603,3677,12:00,Cantonment,Circle Line
+2026-07-01,weekday,13,TRAIN,CC31,1951,2084,4035,13:00,Cantonment,Circle Line
+2026-07-01,weekday,14,TRAIN,CC31,1490,2007,3497,14:00,Cantonment,Circle Line
+2026-07-01,weekday,15,TRAIN,CC31,1615,1974,3589,15:00,Cantonment,Circle Line
+2026-07-01,weekday,16,TRAIN,CC31,1845,2005,3850,16:00,Cantonment,Circle Line
+2026-07-01,weekday,17,TRAIN,CC31,2917,2712,5629,17:00,Cantonment,Circle Line
+2026-07-01,weekday,18,TRAIN,CC31,3960,4364,8324,18:00,Cantonment,Circle Line
+2026-07-01,weekday,19,TRAIN,CC31,2221,3472,5693,19:00,Cantonment,Circle Line
+2026-07-01,weekday,20,TRAIN,CC31,1096,2577,3673,20:00,Cantonment,Circle Line
+2026-07-01,weekday,21,TRAIN,CC31,693,2496,3189,21:00,Cantonment,Circle Line
+2026-07-01,weekday,22,TRAIN,CC31,574,2072,2646,22:00,Cantonment,Circle Line
+2026-07-01,weekday,23,TRAIN,CC31,194,903,1097,23:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,0,TRAIN,CC31,0,1,1,00:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,5,TRAIN,CC31,12,0,12,05:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,6,TRAIN,CC31,158,28,186,06:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,7,TRAIN,CC31,337,149,486,07:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,8,TRAIN,CC31,544,203,747,08:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,9,TRAIN,CC31,725,416,1141,09:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,10,TRAIN,CC31,928,778,1706,10:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,11,TRAIN,CC31,1124,948,2072,11:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,12,TRAIN,CC31,1237,1083,2320,12:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,13,TRAIN,CC31,1124,1306,2430,13:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,14,TRAIN,CC31,1328,1815,3143,14:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,15,TRAIN,CC31,1478,1712,3190,15:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,16,TRAIN,CC31,1667,1539,3206,16:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,17,TRAIN,CC31,1948,1405,3353,17:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,18,TRAIN,CC31,1434,1172,2606,18:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,19,TRAIN,CC31,1087,1128,2215,19:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,20,TRAIN,CC31,598,1227,1825,20:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,21,TRAIN,CC31,345,1184,1529,21:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,22,TRAIN,CC31,324,842,1166,22:00,Cantonment,Circle Line
+2026-07-01,weekends/holiday,23,TRAIN,CC31,233,329,562,23:00,Cantonment,Circle Line
+2026-07-01,weekday,0,TRAIN,CC32,0,2,2,00:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,5,TRAIN,CC32,11,3,14,05:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,6,TRAIN,CC32,111,214,325,06:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,7,TRAIN,CC32,383,1223,1606,07:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,8,TRAIN,CC32,924,4447,5371,08:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,9,TRAIN,CC32,939,4200,5139,09:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,10,TRAIN,CC32,925,1427,2352,10:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,11,TRAIN,CC32,1658,856,2514,11:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,12,TRAIN,CC32,1837,1618,3455,12:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,13,TRAIN,CC32,1266,2016,3282,13:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,14,TRAIN,CC32,1213,1478,2691,14:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,15,TRAIN,CC32,980,1139,2119,15:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,16,TRAIN,CC32,1554,1002,2556,16:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,17,TRAIN,CC32,4770,1672,6442,17:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,18,TRAIN,CC32,7755,2499,10254,18:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,19,TRAIN,CC32,2811,1504,4315,19:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,20,TRAIN,CC32,1203,1391,2594,20:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,21,TRAIN,CC32,930,1266,2196,21:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,22,TRAIN,CC32,546,858,1404,22:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,23,TRAIN,CC32,154,298,452,23:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,0,TRAIN,CC32,0,2,2,00:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,5,TRAIN,CC32,1,1,2,05:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,6,TRAIN,CC32,33,31,64,06:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,7,TRAIN,CC32,75,73,148,07:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,8,TRAIN,CC32,123,132,255,08:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,9,TRAIN,CC32,191,195,386,09:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,10,TRAIN,CC32,344,339,683,10:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,11,TRAIN,CC32,496,452,948,11:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,12,TRAIN,CC32,552,525,1077,12:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,13,TRAIN,CC32,513,530,1043,13:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,14,TRAIN,CC32,679,629,1308,14:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,15,TRAIN,CC32,660,695,1355,15:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,16,TRAIN,CC32,681,696,1377,16:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,17,TRAIN,CC32,662,695,1357,17:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,18,TRAIN,CC32,589,675,1264,18:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,19,TRAIN,CC32,540,473,1013,19:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,20,TRAIN,CC32,345,591,936,20:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,21,TRAIN,CC32,201,718,919,21:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,22,TRAIN,CC32,141,396,537,22:00,Prince Edward Road,Circle Line
+2026-07-01,weekends/holiday,23,TRAIN,CC32,52,117,169,23:00,Prince Edward Road,Circle Line
+2026-07-01,weekday,0,TRAIN,CC34/DT16,1307,419,1726,00:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekday,5,TRAIN,CC34/DT16,1037,184,1221,05:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekday,6,TRAIN,CC34/DT16,5346,18285,23631,06:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekday,7,TRAIN,CC34/DT16,8489,21776,30265,07:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekday,8,TRAIN,CC34/DT16,8313,31240,39553,08:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekday,9,TRAIN,CC34/DT16,5928,32232,38160,09:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekday,10,TRAIN,CC34/DT16,7307,26547,33854,10:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekday,11,TRAIN,CC34/DT16,12064,28103,40167,11:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekday,12,TRAIN,CC34/DT16,15173,30176,45349,12:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekday,13,TRAIN,CC34/DT16,20272,30736,51008,13:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekday,14,TRAIN,CC34/DT16,21493,29495,50988,14:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekday,15,TRAIN,CC34/DT16,27331,23773,51104,15:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekday,16,TRAIN,CC34/DT16,28502,23894,52396,16:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekday,17,TRAIN,CC34/DT16,38674,29029,67703,17:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekday,18,TRAIN,CC34/DT16,45783,38440,84223,18:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekday,19,TRAIN,CC34/DT16,37241,39096,76337,19:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekday,20,TRAIN,CC34/DT16,68351,24092,92443,20:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekday,21,TRAIN,CC34/DT16,64293,15924,80217,21:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekday,22,TRAIN,CC34/DT16,45640,12401,58041,22:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekday,23,TRAIN,CC34/DT16,27567,4034,31601,23:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,0,TRAIN,CC34/DT16,469,197,666,00:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,5,TRAIN,CC34/DT16,142,33,175,05:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,6,TRAIN,CC34/DT16,2621,4422,7043,06:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,7,TRAIN,CC34/DT16,3187,5379,8566,07:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,8,TRAIN,CC34/DT16,2835,8461,11296,08:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,9,TRAIN,CC34/DT16,2251,10853,13104,09:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,10,TRAIN,CC34/DT16,5115,13582,18697,10:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,11,TRAIN,CC34/DT16,5576,17542,23118,11:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,12,TRAIN,CC34/DT16,7109,15716,22825,12:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,13,TRAIN,CC34/DT16,13215,16889,30104,13:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,14,TRAIN,CC34/DT16,11714,18048,29762,14:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,15,TRAIN,CC34/DT16,16356,16231,32587,15:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,16,TRAIN,CC34/DT16,17381,15012,32393,16:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,17,TRAIN,CC34/DT16,19448,15251,34699,17:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,18,TRAIN,CC34/DT16,20107,16260,36367,18:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,19,TRAIN,CC34/DT16,18732,16328,35060,19:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,20,TRAIN,CC34/DT16,31894,11342,43236,20:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,21,TRAIN,CC34/DT16,28803,6853,35656,21:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,22,TRAIN,CC34/DT16,19800,4490,24290,22:00,Bayfront,Circle Line / Downtown Line
+2026-07-01,weekends/holiday,23,TRAIN,CC34/DT16,11442,1783,13225,23:00,Bayfront,Circle Line / Downtown Line
 2026-07-01,weekday,0,TRAIN,CC4/DT15,325,144,469,00:00,Promenade,Circle Line
 2026-07-01,weekday,5,TRAIN,CC4/DT15,231,344,575,05:00,Promenade,Circle Line
 2026-07-01,weekday,6,TRAIN,CC4/DT15,904,10773,11677,06:00,Promenade,Circle Line
@@ -12352,46 +12352,46 @@ year_month,day_type,hour,transport_type,station_code,tap_in_volume,tap_out_volum
 2026-07-01,weekends/holiday,21,TRAIN,NS25/EW13,36201,6729,42930,21:00,City Hall,North-South Line 
 2026-07-01,weekends/holiday,22,TRAIN,NS25/EW13,27863,3936,31799,22:00,City Hall,North-South Line 
 2026-07-01,weekends/holiday,23,TRAIN,NS25/EW13,10614,1849,12463,23:00,City Hall,North-South Line 
-2026-07-01,weekday,0,TRAIN,NS27/CC33/TE20,40,157,197,00:00,Marina Bay,North-South Line 
-2026-07-01,weekday,5,TRAIN,NS27/CC33/TE20,383,149,532,05:00,Marina Bay,North-South Line 
-2026-07-01,weekday,6,TRAIN,NS27/CC33/TE20,1160,2913,4073,06:00,Marina Bay,North-South Line 
-2026-07-01,weekday,7,TRAIN,NS27/CC33/TE20,1140,6441,7581,07:00,Marina Bay,North-South Line 
-2026-07-01,weekday,8,TRAIN,NS27/CC33/TE20,1827,23760,25587,08:00,Marina Bay,North-South Line 
-2026-07-01,weekday,9,TRAIN,NS27/CC33/TE20,1285,21206,22491,09:00,Marina Bay,North-South Line 
-2026-07-01,weekday,10,TRAIN,NS27/CC33/TE20,1483,6199,7682,10:00,Marina Bay,North-South Line 
-2026-07-01,weekday,11,TRAIN,NS27/CC33/TE20,4497,4007,8504,11:00,Marina Bay,North-South Line 
-2026-07-01,weekday,12,TRAIN,NS27/CC33/TE20,5240,4250,9490,12:00,Marina Bay,North-South Line 
-2026-07-01,weekday,13,TRAIN,NS27/CC33/TE20,3332,6938,10270,13:00,Marina Bay,North-South Line 
-2026-07-01,weekday,14,TRAIN,NS27/CC33/TE20,3130,4504,7634,14:00,Marina Bay,North-South Line 
-2026-07-01,weekday,15,TRAIN,NS27/CC33/TE20,3471,2956,6427,15:00,Marina Bay,North-South Line 
-2026-07-01,weekday,16,TRAIN,NS27/CC33/TE20,6327,3175,9502,16:00,Marina Bay,North-South Line 
-2026-07-01,weekday,17,TRAIN,NS27/CC33/TE20,15304,3718,19022,17:00,Marina Bay,North-South Line 
-2026-07-01,weekday,18,TRAIN,NS27/CC33/TE20,34200,4688,38888,18:00,Marina Bay,North-South Line 
-2026-07-01,weekday,19,TRAIN,NS27/CC33/TE20,15071,3742,18813,19:00,Marina Bay,North-South Line 
-2026-07-01,weekday,20,TRAIN,NS27/CC33/TE20,6505,3007,9512,20:00,Marina Bay,North-South Line 
-2026-07-01,weekday,21,TRAIN,NS27/CC33/TE20,3927,2216,6143,21:00,Marina Bay,North-South Line 
-2026-07-01,weekday,22,TRAIN,NS27/CC33/TE20,2447,1272,3719,22:00,Marina Bay,North-South Line 
-2026-07-01,weekday,23,TRAIN,NS27/CC33/TE20,1059,541,1600,23:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,0,TRAIN,NS27/CC33/TE20,10,50,60,00:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,5,TRAIN,NS27/CC33/TE20,63,3,66,05:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,6,TRAIN,NS27/CC33/TE20,308,276,584,06:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,7,TRAIN,NS27/CC33/TE20,383,535,918,07:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,8,TRAIN,NS27/CC33/TE20,340,576,916,08:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,9,TRAIN,NS27/CC33/TE20,481,847,1328,09:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,10,TRAIN,NS27/CC33/TE20,812,1271,2083,10:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,11,TRAIN,NS27/CC33/TE20,998,1522,2520,11:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,12,TRAIN,NS27/CC33/TE20,1204,1656,2860,12:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,13,TRAIN,NS27/CC33/TE20,1285,1921,3206,13:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,14,TRAIN,NS27/CC33/TE20,1328,1928,3256,14:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,15,TRAIN,NS27/CC33/TE20,1566,1976,3542,15:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,16,TRAIN,NS27/CC33/TE20,1766,2076,3842,16:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,17,TRAIN,NS27/CC33/TE20,1819,2162,3981,17:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,18,TRAIN,NS27/CC33/TE20,1684,2147,3831,18:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,19,TRAIN,NS27/CC33/TE20,1398,2041,3439,19:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,20,TRAIN,NS27/CC33/TE20,1062,1650,2712,20:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,21,TRAIN,NS27/CC33/TE20,872,1035,1907,21:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,22,TRAIN,NS27/CC33/TE20,553,512,1065,22:00,Marina Bay,North-South Line 
-2026-07-01,weekends/holiday,23,TRAIN,NS27/CC33/TE20,195,221,416,23:00,Marina Bay,North-South Line 
+2026-07-01,weekday,0,TRAIN,NS27/CC33/TE20,40,157,197,00:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekday,5,TRAIN,NS27/CC33/TE20,383,149,532,05:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekday,6,TRAIN,NS27/CC33/TE20,1160,2913,4073,06:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekday,7,TRAIN,NS27/CC33/TE20,1140,6441,7581,07:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekday,8,TRAIN,NS27/CC33/TE20,1827,23760,25587,08:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekday,9,TRAIN,NS27/CC33/TE20,1285,21206,22491,09:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekday,10,TRAIN,NS27/CC33/TE20,1483,6199,7682,10:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekday,11,TRAIN,NS27/CC33/TE20,4497,4007,8504,11:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekday,12,TRAIN,NS27/CC33/TE20,5240,4250,9490,12:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekday,13,TRAIN,NS27/CC33/TE20,3332,6938,10270,13:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekday,14,TRAIN,NS27/CC33/TE20,3130,4504,7634,14:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekday,15,TRAIN,NS27/CC33/TE20,3471,2956,6427,15:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekday,16,TRAIN,NS27/CC33/TE20,6327,3175,9502,16:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekday,17,TRAIN,NS27/CC33/TE20,15304,3718,19022,17:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekday,18,TRAIN,NS27/CC33/TE20,34200,4688,38888,18:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekday,19,TRAIN,NS27/CC33/TE20,15071,3742,18813,19:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekday,20,TRAIN,NS27/CC33/TE20,6505,3007,9512,20:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekday,21,TRAIN,NS27/CC33/TE20,3927,2216,6143,21:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekday,22,TRAIN,NS27/CC33/TE20,2447,1272,3719,22:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekday,23,TRAIN,NS27/CC33/TE20,1059,541,1600,23:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,0,TRAIN,NS27/CC33/TE20,10,50,60,00:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,5,TRAIN,NS27/CC33/TE20,63,3,66,05:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,6,TRAIN,NS27/CC33/TE20,308,276,584,06:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,7,TRAIN,NS27/CC33/TE20,383,535,918,07:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,8,TRAIN,NS27/CC33/TE20,340,576,916,08:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,9,TRAIN,NS27/CC33/TE20,481,847,1328,09:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,10,TRAIN,NS27/CC33/TE20,812,1271,2083,10:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,11,TRAIN,NS27/CC33/TE20,998,1522,2520,11:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,12,TRAIN,NS27/CC33/TE20,1204,1656,2860,12:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,13,TRAIN,NS27/CC33/TE20,1285,1921,3206,13:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,14,TRAIN,NS27/CC33/TE20,1328,1928,3256,14:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,15,TRAIN,NS27/CC33/TE20,1566,1976,3542,15:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,16,TRAIN,NS27/CC33/TE20,1766,2076,3842,16:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,17,TRAIN,NS27/CC33/TE20,1819,2162,3981,17:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,18,TRAIN,NS27/CC33/TE20,1684,2147,3831,18:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,19,TRAIN,NS27/CC33/TE20,1398,2041,3439,19:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,20,TRAIN,NS27/CC33/TE20,1062,1650,2712,20:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,21,TRAIN,NS27/CC33/TE20,872,1035,1907,21:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,22,TRAIN,NS27/CC33/TE20,553,512,1065,22:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-07-01,weekends/holiday,23,TRAIN,NS27/CC33/TE20,195,221,416,23:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
 2026-07-01,weekday,0,TRAIN,NS27/CE2/TE20,16,52,68,00:00,Marina Bay,North-South Line 
 2026-07-01,weekday,5,TRAIN,NS27/CE2/TE20,250,85,335,05:00,Marina Bay,North-South Line 
 2026-07-01,weekday,6,TRAIN,NS27/CE2/TE20,525,1442,1967,06:00,Marina Bay,North-South Line 
@@ -15853,166 +15853,166 @@ year_month,day_type,hour,transport_type,station_code,tap_in_volume,tap_out_volum
 2026-08-01,weekends/holiday,21,TRAIN,CC3,10586,2570,13156,21:00,Esplanade,Circle Line
 2026-08-01,weekends/holiday,22,TRAIN,CC3,8201,1216,9417,22:00,Esplanade,Circle Line
 2026-08-01,weekends/holiday,23,TRAIN,CC3,2287,619,2906,23:00,Esplanade,Circle Line
-2026-08-01,weekday,0,TRAIN,CC30,1,2,3,00:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,5,TRAIN,CC30,8,1,9,05:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,6,TRAIN,CC30,138,98,236,06:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,7,TRAIN,CC30,578,291,869,07:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,8,TRAIN,CC30,287,290,577,08:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,9,TRAIN,CC30,145,116,261,09:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,10,TRAIN,CC30,124,116,240,10:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,11,TRAIN,CC30,128,99,227,11:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,12,TRAIN,CC30,113,173,286,12:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,13,TRAIN,CC30,144,139,283,13:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,14,TRAIN,CC30,190,181,371,14:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,15,TRAIN,CC30,170,141,311,15:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,16,TRAIN,CC30,188,133,321,16:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,17,TRAIN,CC30,300,152,452,17:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,18,TRAIN,CC30,521,273,794,18:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,19,TRAIN,CC30,258,161,419,19:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,20,TRAIN,CC30,106,152,258,20:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,21,TRAIN,CC30,74,101,175,21:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,22,TRAIN,CC30,64,73,137,22:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,23,TRAIN,CC30,32,47,79,23:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,0,TRAIN,CC30,1,5,6,00:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,5,TRAIN,CC30,5,2,7,05:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,6,TRAIN,CC30,51,33,84,06:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,7,TRAIN,CC30,121,134,255,07:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,8,TRAIN,CC30,42,65,107,08:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,9,TRAIN,CC30,46,66,112,09:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,10,TRAIN,CC30,107,86,193,10:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,11,TRAIN,CC30,149,117,266,11:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,12,TRAIN,CC30,99,114,213,12:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,13,TRAIN,CC30,175,167,342,13:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,14,TRAIN,CC30,147,138,285,14:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,15,TRAIN,CC30,187,164,351,15:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,16,TRAIN,CC30,169,171,340,16:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,17,TRAIN,CC30,182,150,332,17:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,18,TRAIN,CC30,254,126,380,18:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,19,TRAIN,CC30,111,80,191,19:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,20,TRAIN,CC30,82,106,188,20:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,21,TRAIN,CC30,78,132,210,21:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,22,TRAIN,CC30,45,59,104,22:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekends/holiday,23,TRAIN,CC30,17,28,45,23:00,Unknown station CC30,Circle Line (inferred)
-2026-08-01,weekday,0,TRAIN,CC31,0,4,4,00:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,5,TRAIN,CC31,148,9,157,05:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,6,TRAIN,CC31,1808,189,1997,06:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,7,TRAIN,CC31,3502,1487,4989,07:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,8,TRAIN,CC31,6099,2275,8374,08:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,9,TRAIN,CC31,4437,2119,6556,09:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,10,TRAIN,CC31,2284,1231,3515,10:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,11,TRAIN,CC31,2188,1294,3482,11:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,12,TRAIN,CC31,2334,1777,4111,12:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,13,TRAIN,CC31,2262,2428,4690,13:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,14,TRAIN,CC31,1730,2294,4024,14:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,15,TRAIN,CC31,1899,2284,4183,15:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,16,TRAIN,CC31,2096,2525,4621,16:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,17,TRAIN,CC31,3750,3690,7440,17:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,18,TRAIN,CC31,4875,5683,10558,18:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,19,TRAIN,CC31,2711,4627,7338,19:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,20,TRAIN,CC31,1268,3341,4609,20:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,21,TRAIN,CC31,891,3321,4212,21:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,22,TRAIN,CC31,724,2965,3689,22:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,23,TRAIN,CC31,282,1231,1513,23:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,0,TRAIN,CC31,1,9,10,00:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,5,TRAIN,CC31,34,0,34,05:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,6,TRAIN,CC31,486,39,525,06:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,7,TRAIN,CC31,746,335,1081,07:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,8,TRAIN,CC31,1236,510,1746,08:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,9,TRAIN,CC31,1478,669,2147,09:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,10,TRAIN,CC31,1734,881,2615,10:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,11,TRAIN,CC31,1704,1042,2746,11:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,12,TRAIN,CC31,1786,1435,3221,12:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,13,TRAIN,CC31,1781,1920,3701,13:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,14,TRAIN,CC31,1595,2234,3829,14:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,15,TRAIN,CC31,1768,1964,3732,15:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,16,TRAIN,CC31,2347,1843,4190,16:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,17,TRAIN,CC31,2422,1803,4225,17:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,18,TRAIN,CC31,2141,1654,3795,18:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,19,TRAIN,CC31,1621,1818,3439,19:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,20,TRAIN,CC31,754,1981,2735,20:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,21,TRAIN,CC31,604,2399,3003,21:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,22,TRAIN,CC31,363,1889,2252,22:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekends/holiday,23,TRAIN,CC31,197,860,1057,23:00,Unknown station CC31,Circle Line (inferred)
-2026-08-01,weekday,0,TRAIN,CC32,0,8,8,00:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,5,TRAIN,CC32,10,4,14,05:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,6,TRAIN,CC32,183,372,555,06:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,7,TRAIN,CC32,752,1919,2671,07:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,8,TRAIN,CC32,1549,7218,8767,08:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,9,TRAIN,CC32,1319,6648,7967,09:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,10,TRAIN,CC32,1110,2149,3259,10:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,11,TRAIN,CC32,2271,1124,3395,11:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,12,TRAIN,CC32,2172,1795,3967,12:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,13,TRAIN,CC32,1587,2541,4128,13:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,14,TRAIN,CC32,1436,1795,3231,14:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,15,TRAIN,CC32,1196,1238,2434,15:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,16,TRAIN,CC32,1974,1252,3226,16:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,17,TRAIN,CC32,7062,2148,9210,17:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,18,TRAIN,CC32,11207,3582,14789,18:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,19,TRAIN,CC32,4103,2194,6297,19:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,20,TRAIN,CC32,1640,1710,3350,20:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,21,TRAIN,CC32,1223,1796,3019,21:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,22,TRAIN,CC32,845,1111,1956,22:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,23,TRAIN,CC32,251,430,681,23:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,0,TRAIN,CC32,0,5,5,00:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,5,TRAIN,CC32,2,1,3,05:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,6,TRAIN,CC32,68,36,104,06:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,7,TRAIN,CC32,107,197,304,07:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,8,TRAIN,CC32,261,329,590,08:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,9,TRAIN,CC32,503,334,837,09:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,10,TRAIN,CC32,800,470,1270,10:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,11,TRAIN,CC32,928,513,1441,11:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,12,TRAIN,CC32,837,766,1603,12:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,13,TRAIN,CC32,791,811,1602,13:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,14,TRAIN,CC32,905,978,1883,14:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,15,TRAIN,CC32,941,951,1892,15:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,16,TRAIN,CC32,963,911,1874,16:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,17,TRAIN,CC32,1118,1161,2279,17:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,18,TRAIN,CC32,1041,1077,2118,18:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,19,TRAIN,CC32,911,911,1822,19:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,20,TRAIN,CC32,521,1247,1768,20:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,21,TRAIN,CC32,495,1344,1839,21:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,22,TRAIN,CC32,342,847,1189,22:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekends/holiday,23,TRAIN,CC32,99,349,448,23:00,Unknown station CC32,Circle Line (inferred)
-2026-08-01,weekday,0,TRAIN,CC34/DT16,1638,698,2336,00:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekday,5,TRAIN,CC34/DT16,1380,274,1654,05:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekday,6,TRAIN,CC34/DT16,6975,24633,31608,06:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekday,7,TRAIN,CC34/DT16,11501,30205,41706,07:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekday,8,TRAIN,CC34/DT16,11303,43985,55288,08:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekday,9,TRAIN,CC34/DT16,8342,40628,48970,09:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekday,10,TRAIN,CC34/DT16,10841,36552,47393,10:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekday,11,TRAIN,CC34/DT16,17336,37947,55283,11:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekday,12,TRAIN,CC34/DT16,21145,40566,61711,12:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekday,13,TRAIN,CC34/DT16,27145,40455,67600,13:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekday,14,TRAIN,CC34/DT16,28579,38433,67012,14:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekday,15,TRAIN,CC34/DT16,36345,32038,68383,15:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekday,16,TRAIN,CC34/DT16,38107,31572,69679,16:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekday,17,TRAIN,CC34/DT16,53144,39476,92620,17:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekday,18,TRAIN,CC34/DT16,57935,52098,110033,18:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekday,19,TRAIN,CC34/DT16,50170,53942,104112,19:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekday,20,TRAIN,CC34/DT16,89238,33853,123091,20:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekday,21,TRAIN,CC34/DT16,86174,21604,107778,21:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekday,22,TRAIN,CC34/DT16,63132,16502,79634,22:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekday,23,TRAIN,CC34/DT16,38277,6067,44344,23:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,0,TRAIN,CC34/DT16,1687,873,2560,00:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,5,TRAIN,CC34/DT16,413,69,482,05:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,6,TRAIN,CC34/DT16,6982,9896,16878,06:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,7,TRAIN,CC34/DT16,7190,11626,18816,07:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,8,TRAIN,CC34/DT16,6492,17840,24332,08:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,9,TRAIN,CC34/DT16,5021,21577,26598,09:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,10,TRAIN,CC34/DT16,10357,28386,38743,10:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,11,TRAIN,CC34/DT16,12358,35768,48126,11:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,12,TRAIN,CC34/DT16,14878,33320,48198,12:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,13,TRAIN,CC34/DT16,25187,38667,63854,13:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,14,TRAIN,CC34/DT16,26290,39368,65658,14:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,15,TRAIN,CC34/DT16,34906,35905,70811,15:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,16,TRAIN,CC34/DT16,38889,35874,74763,16:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,17,TRAIN,CC34/DT16,40905,39115,80020,17:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,18,TRAIN,CC34/DT16,40211,40736,80947,18:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,19,TRAIN,CC34/DT16,42144,41059,83203,19:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,20,TRAIN,CC34/DT16,76566,26916,103482,20:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,21,TRAIN,CC34/DT16,70459,16743,87202,21:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,22,TRAIN,CC34/DT16,52048,11570,63618,22:00,Unknown station CC34/DT16,Circle Line (inferred)
-2026-08-01,weekends/holiday,23,TRAIN,CC34/DT16,28931,5446,34377,23:00,Unknown station CC34/DT16,Circle Line (inferred)
+2026-08-01,weekday,0,TRAIN,CC30,1,2,3,00:00,Keppel,Circle Line
+2026-08-01,weekday,5,TRAIN,CC30,8,1,9,05:00,Keppel,Circle Line
+2026-08-01,weekday,6,TRAIN,CC30,138,98,236,06:00,Keppel,Circle Line
+2026-08-01,weekday,7,TRAIN,CC30,578,291,869,07:00,Keppel,Circle Line
+2026-08-01,weekday,8,TRAIN,CC30,287,290,577,08:00,Keppel,Circle Line
+2026-08-01,weekday,9,TRAIN,CC30,145,116,261,09:00,Keppel,Circle Line
+2026-08-01,weekday,10,TRAIN,CC30,124,116,240,10:00,Keppel,Circle Line
+2026-08-01,weekday,11,TRAIN,CC30,128,99,227,11:00,Keppel,Circle Line
+2026-08-01,weekday,12,TRAIN,CC30,113,173,286,12:00,Keppel,Circle Line
+2026-08-01,weekday,13,TRAIN,CC30,144,139,283,13:00,Keppel,Circle Line
+2026-08-01,weekday,14,TRAIN,CC30,190,181,371,14:00,Keppel,Circle Line
+2026-08-01,weekday,15,TRAIN,CC30,170,141,311,15:00,Keppel,Circle Line
+2026-08-01,weekday,16,TRAIN,CC30,188,133,321,16:00,Keppel,Circle Line
+2026-08-01,weekday,17,TRAIN,CC30,300,152,452,17:00,Keppel,Circle Line
+2026-08-01,weekday,18,TRAIN,CC30,521,273,794,18:00,Keppel,Circle Line
+2026-08-01,weekday,19,TRAIN,CC30,258,161,419,19:00,Keppel,Circle Line
+2026-08-01,weekday,20,TRAIN,CC30,106,152,258,20:00,Keppel,Circle Line
+2026-08-01,weekday,21,TRAIN,CC30,74,101,175,21:00,Keppel,Circle Line
+2026-08-01,weekday,22,TRAIN,CC30,64,73,137,22:00,Keppel,Circle Line
+2026-08-01,weekday,23,TRAIN,CC30,32,47,79,23:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,0,TRAIN,CC30,1,5,6,00:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,5,TRAIN,CC30,5,2,7,05:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,6,TRAIN,CC30,51,33,84,06:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,7,TRAIN,CC30,121,134,255,07:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,8,TRAIN,CC30,42,65,107,08:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,9,TRAIN,CC30,46,66,112,09:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,10,TRAIN,CC30,107,86,193,10:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,11,TRAIN,CC30,149,117,266,11:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,12,TRAIN,CC30,99,114,213,12:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,13,TRAIN,CC30,175,167,342,13:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,14,TRAIN,CC30,147,138,285,14:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,15,TRAIN,CC30,187,164,351,15:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,16,TRAIN,CC30,169,171,340,16:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,17,TRAIN,CC30,182,150,332,17:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,18,TRAIN,CC30,254,126,380,18:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,19,TRAIN,CC30,111,80,191,19:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,20,TRAIN,CC30,82,106,188,20:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,21,TRAIN,CC30,78,132,210,21:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,22,TRAIN,CC30,45,59,104,22:00,Keppel,Circle Line
+2026-08-01,weekends/holiday,23,TRAIN,CC30,17,28,45,23:00,Keppel,Circle Line
+2026-08-01,weekday,0,TRAIN,CC31,0,4,4,00:00,Cantonment,Circle Line
+2026-08-01,weekday,5,TRAIN,CC31,148,9,157,05:00,Cantonment,Circle Line
+2026-08-01,weekday,6,TRAIN,CC31,1808,189,1997,06:00,Cantonment,Circle Line
+2026-08-01,weekday,7,TRAIN,CC31,3502,1487,4989,07:00,Cantonment,Circle Line
+2026-08-01,weekday,8,TRAIN,CC31,6099,2275,8374,08:00,Cantonment,Circle Line
+2026-08-01,weekday,9,TRAIN,CC31,4437,2119,6556,09:00,Cantonment,Circle Line
+2026-08-01,weekday,10,TRAIN,CC31,2284,1231,3515,10:00,Cantonment,Circle Line
+2026-08-01,weekday,11,TRAIN,CC31,2188,1294,3482,11:00,Cantonment,Circle Line
+2026-08-01,weekday,12,TRAIN,CC31,2334,1777,4111,12:00,Cantonment,Circle Line
+2026-08-01,weekday,13,TRAIN,CC31,2262,2428,4690,13:00,Cantonment,Circle Line
+2026-08-01,weekday,14,TRAIN,CC31,1730,2294,4024,14:00,Cantonment,Circle Line
+2026-08-01,weekday,15,TRAIN,CC31,1899,2284,4183,15:00,Cantonment,Circle Line
+2026-08-01,weekday,16,TRAIN,CC31,2096,2525,4621,16:00,Cantonment,Circle Line
+2026-08-01,weekday,17,TRAIN,CC31,3750,3690,7440,17:00,Cantonment,Circle Line
+2026-08-01,weekday,18,TRAIN,CC31,4875,5683,10558,18:00,Cantonment,Circle Line
+2026-08-01,weekday,19,TRAIN,CC31,2711,4627,7338,19:00,Cantonment,Circle Line
+2026-08-01,weekday,20,TRAIN,CC31,1268,3341,4609,20:00,Cantonment,Circle Line
+2026-08-01,weekday,21,TRAIN,CC31,891,3321,4212,21:00,Cantonment,Circle Line
+2026-08-01,weekday,22,TRAIN,CC31,724,2965,3689,22:00,Cantonment,Circle Line
+2026-08-01,weekday,23,TRAIN,CC31,282,1231,1513,23:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,0,TRAIN,CC31,1,9,10,00:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,5,TRAIN,CC31,34,0,34,05:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,6,TRAIN,CC31,486,39,525,06:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,7,TRAIN,CC31,746,335,1081,07:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,8,TRAIN,CC31,1236,510,1746,08:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,9,TRAIN,CC31,1478,669,2147,09:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,10,TRAIN,CC31,1734,881,2615,10:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,11,TRAIN,CC31,1704,1042,2746,11:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,12,TRAIN,CC31,1786,1435,3221,12:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,13,TRAIN,CC31,1781,1920,3701,13:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,14,TRAIN,CC31,1595,2234,3829,14:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,15,TRAIN,CC31,1768,1964,3732,15:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,16,TRAIN,CC31,2347,1843,4190,16:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,17,TRAIN,CC31,2422,1803,4225,17:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,18,TRAIN,CC31,2141,1654,3795,18:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,19,TRAIN,CC31,1621,1818,3439,19:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,20,TRAIN,CC31,754,1981,2735,20:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,21,TRAIN,CC31,604,2399,3003,21:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,22,TRAIN,CC31,363,1889,2252,22:00,Cantonment,Circle Line
+2026-08-01,weekends/holiday,23,TRAIN,CC31,197,860,1057,23:00,Cantonment,Circle Line
+2026-08-01,weekday,0,TRAIN,CC32,0,8,8,00:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,5,TRAIN,CC32,10,4,14,05:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,6,TRAIN,CC32,183,372,555,06:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,7,TRAIN,CC32,752,1919,2671,07:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,8,TRAIN,CC32,1549,7218,8767,08:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,9,TRAIN,CC32,1319,6648,7967,09:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,10,TRAIN,CC32,1110,2149,3259,10:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,11,TRAIN,CC32,2271,1124,3395,11:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,12,TRAIN,CC32,2172,1795,3967,12:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,13,TRAIN,CC32,1587,2541,4128,13:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,14,TRAIN,CC32,1436,1795,3231,14:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,15,TRAIN,CC32,1196,1238,2434,15:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,16,TRAIN,CC32,1974,1252,3226,16:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,17,TRAIN,CC32,7062,2148,9210,17:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,18,TRAIN,CC32,11207,3582,14789,18:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,19,TRAIN,CC32,4103,2194,6297,19:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,20,TRAIN,CC32,1640,1710,3350,20:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,21,TRAIN,CC32,1223,1796,3019,21:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,22,TRAIN,CC32,845,1111,1956,22:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,23,TRAIN,CC32,251,430,681,23:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,0,TRAIN,CC32,0,5,5,00:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,5,TRAIN,CC32,2,1,3,05:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,6,TRAIN,CC32,68,36,104,06:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,7,TRAIN,CC32,107,197,304,07:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,8,TRAIN,CC32,261,329,590,08:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,9,TRAIN,CC32,503,334,837,09:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,10,TRAIN,CC32,800,470,1270,10:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,11,TRAIN,CC32,928,513,1441,11:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,12,TRAIN,CC32,837,766,1603,12:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,13,TRAIN,CC32,791,811,1602,13:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,14,TRAIN,CC32,905,978,1883,14:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,15,TRAIN,CC32,941,951,1892,15:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,16,TRAIN,CC32,963,911,1874,16:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,17,TRAIN,CC32,1118,1161,2279,17:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,18,TRAIN,CC32,1041,1077,2118,18:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,19,TRAIN,CC32,911,911,1822,19:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,20,TRAIN,CC32,521,1247,1768,20:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,21,TRAIN,CC32,495,1344,1839,21:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,22,TRAIN,CC32,342,847,1189,22:00,Prince Edward Road,Circle Line
+2026-08-01,weekends/holiday,23,TRAIN,CC32,99,349,448,23:00,Prince Edward Road,Circle Line
+2026-08-01,weekday,0,TRAIN,CC34/DT16,1638,698,2336,00:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekday,5,TRAIN,CC34/DT16,1380,274,1654,05:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekday,6,TRAIN,CC34/DT16,6975,24633,31608,06:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekday,7,TRAIN,CC34/DT16,11501,30205,41706,07:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekday,8,TRAIN,CC34/DT16,11303,43985,55288,08:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekday,9,TRAIN,CC34/DT16,8342,40628,48970,09:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekday,10,TRAIN,CC34/DT16,10841,36552,47393,10:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekday,11,TRAIN,CC34/DT16,17336,37947,55283,11:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekday,12,TRAIN,CC34/DT16,21145,40566,61711,12:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekday,13,TRAIN,CC34/DT16,27145,40455,67600,13:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekday,14,TRAIN,CC34/DT16,28579,38433,67012,14:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekday,15,TRAIN,CC34/DT16,36345,32038,68383,15:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekday,16,TRAIN,CC34/DT16,38107,31572,69679,16:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekday,17,TRAIN,CC34/DT16,53144,39476,92620,17:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekday,18,TRAIN,CC34/DT16,57935,52098,110033,18:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekday,19,TRAIN,CC34/DT16,50170,53942,104112,19:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekday,20,TRAIN,CC34/DT16,89238,33853,123091,20:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekday,21,TRAIN,CC34/DT16,86174,21604,107778,21:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekday,22,TRAIN,CC34/DT16,63132,16502,79634,22:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekday,23,TRAIN,CC34/DT16,38277,6067,44344,23:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,0,TRAIN,CC34/DT16,1687,873,2560,00:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,5,TRAIN,CC34/DT16,413,69,482,05:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,6,TRAIN,CC34/DT16,6982,9896,16878,06:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,7,TRAIN,CC34/DT16,7190,11626,18816,07:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,8,TRAIN,CC34/DT16,6492,17840,24332,08:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,9,TRAIN,CC34/DT16,5021,21577,26598,09:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,10,TRAIN,CC34/DT16,10357,28386,38743,10:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,11,TRAIN,CC34/DT16,12358,35768,48126,11:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,12,TRAIN,CC34/DT16,14878,33320,48198,12:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,13,TRAIN,CC34/DT16,25187,38667,63854,13:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,14,TRAIN,CC34/DT16,26290,39368,65658,14:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,15,TRAIN,CC34/DT16,34906,35905,70811,15:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,16,TRAIN,CC34/DT16,38889,35874,74763,16:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,17,TRAIN,CC34/DT16,40905,39115,80020,17:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,18,TRAIN,CC34/DT16,40211,40736,80947,18:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,19,TRAIN,CC34/DT16,42144,41059,83203,19:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,20,TRAIN,CC34/DT16,76566,26916,103482,20:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,21,TRAIN,CC34/DT16,70459,16743,87202,21:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,22,TRAIN,CC34/DT16,52048,11570,63618,22:00,Bayfront,Circle Line / Downtown Line
+2026-08-01,weekends/holiday,23,TRAIN,CC34/DT16,28931,5446,34377,23:00,Bayfront,Circle Line / Downtown Line
 2026-08-01,weekday,0,TRAIN,CC4/DT15,292,164,456,00:00,Promenade,Circle Line
 2026-08-01,weekday,5,TRAIN,CC4/DT15,227,282,509,05:00,Promenade,Circle Line
 2026-08-01,weekday,6,TRAIN,CC4/DT15,761,9312,10073,06:00,Promenade,Circle Line
@@ -19771,46 +19771,46 @@ year_month,day_type,hour,transport_type,station_code,tap_in_volume,tap_out_volum
 2026-08-01,weekends/holiday,21,TRAIN,NS25/EW13,52926,10254,63180,21:00,City Hall,North-South Line 
 2026-08-01,weekends/holiday,22,TRAIN,NS25/EW13,40901,5810,46711,22:00,City Hall,North-South Line 
 2026-08-01,weekends/holiday,23,TRAIN,NS25/EW13,15674,2558,18232,23:00,City Hall,North-South Line 
-2026-08-01,weekday,0,TRAIN,NS27/CC33/TE20,33,199,232,00:00,Marina Bay,North-South Line 
-2026-08-01,weekday,5,TRAIN,NS27/CC33/TE20,461,193,654,05:00,Marina Bay,North-South Line 
-2026-08-01,weekday,6,TRAIN,NS27/CC33/TE20,1583,3914,5497,06:00,Marina Bay,North-South Line 
-2026-08-01,weekday,7,TRAIN,NS27/CC33/TE20,1592,8579,10171,07:00,Marina Bay,North-South Line 
-2026-08-01,weekday,8,TRAIN,NS27/CC33/TE20,2373,32148,34521,08:00,Marina Bay,North-South Line 
-2026-08-01,weekday,9,TRAIN,NS27/CC33/TE20,1783,28116,29899,09:00,Marina Bay,North-South Line 
-2026-08-01,weekday,10,TRAIN,NS27/CC33/TE20,2009,8010,10019,10:00,Marina Bay,North-South Line 
-2026-08-01,weekday,11,TRAIN,NS27/CC33/TE20,5739,5083,10822,11:00,Marina Bay,North-South Line 
-2026-08-01,weekday,12,TRAIN,NS27/CC33/TE20,6862,5336,12198,12:00,Marina Bay,North-South Line 
-2026-08-01,weekday,13,TRAIN,NS27/CC33/TE20,4281,8848,13129,13:00,Marina Bay,North-South Line 
-2026-08-01,weekday,14,TRAIN,NS27/CC33/TE20,4055,5729,9784,14:00,Marina Bay,North-South Line 
-2026-08-01,weekday,15,TRAIN,NS27/CC33/TE20,4881,4147,9028,15:00,Marina Bay,North-South Line 
-2026-08-01,weekday,16,TRAIN,NS27/CC33/TE20,8220,4305,12525,16:00,Marina Bay,North-South Line 
-2026-08-01,weekday,17,TRAIN,NS27/CC33/TE20,20726,4619,25345,17:00,Marina Bay,North-South Line 
-2026-08-01,weekday,18,TRAIN,NS27/CC33/TE20,44939,5941,50880,18:00,Marina Bay,North-South Line 
-2026-08-01,weekday,19,TRAIN,NS27/CC33/TE20,20445,5056,25501,19:00,Marina Bay,North-South Line 
-2026-08-01,weekday,20,TRAIN,NS27/CC33/TE20,8527,3828,12355,20:00,Marina Bay,North-South Line 
-2026-08-01,weekday,21,TRAIN,NS27/CC33/TE20,4986,2599,7585,21:00,Marina Bay,North-South Line 
-2026-08-01,weekday,22,TRAIN,NS27/CC33/TE20,3240,1576,4816,22:00,Marina Bay,North-South Line 
-2026-08-01,weekday,23,TRAIN,NS27/CC33/TE20,1563,700,2263,23:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,0,TRAIN,NS27/CC33/TE20,59,324,383,00:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,5,TRAIN,NS27/CC33/TE20,156,15,171,05:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,6,TRAIN,NS27/CC33/TE20,766,707,1473,06:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,7,TRAIN,NS27/CC33/TE20,799,1367,2166,07:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,8,TRAIN,NS27/CC33/TE20,679,1497,2176,08:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,9,TRAIN,NS27/CC33/TE20,946,1789,2735,09:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,10,TRAIN,NS27/CC33/TE20,1637,2477,4114,10:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,11,TRAIN,NS27/CC33/TE20,2042,2777,4819,11:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,12,TRAIN,NS27/CC33/TE20,2399,3419,5818,12:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,13,TRAIN,NS27/CC33/TE20,2522,3877,6399,13:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,14,TRAIN,NS27/CC33/TE20,3042,4180,7222,14:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,15,TRAIN,NS27/CC33/TE20,3303,4607,7910,15:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,16,TRAIN,NS27/CC33/TE20,3787,5250,9037,16:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,17,TRAIN,NS27/CC33/TE20,3905,5795,9700,17:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,18,TRAIN,NS27/CC33/TE20,3497,5913,9410,18:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,19,TRAIN,NS27/CC33/TE20,3506,5366,8872,19:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,20,TRAIN,NS27/CC33/TE20,3336,4168,7504,20:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,21,TRAIN,NS27/CC33/TE20,2911,2829,5740,21:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,22,TRAIN,NS27/CC33/TE20,1713,1472,3185,22:00,Marina Bay,North-South Line 
-2026-08-01,weekends/holiday,23,TRAIN,NS27/CC33/TE20,760,770,1530,23:00,Marina Bay,North-South Line 
+2026-08-01,weekday,0,TRAIN,NS27/CC33/TE20,33,199,232,00:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekday,5,TRAIN,NS27/CC33/TE20,461,193,654,05:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekday,6,TRAIN,NS27/CC33/TE20,1583,3914,5497,06:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekday,7,TRAIN,NS27/CC33/TE20,1592,8579,10171,07:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekday,8,TRAIN,NS27/CC33/TE20,2373,32148,34521,08:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekday,9,TRAIN,NS27/CC33/TE20,1783,28116,29899,09:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekday,10,TRAIN,NS27/CC33/TE20,2009,8010,10019,10:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekday,11,TRAIN,NS27/CC33/TE20,5739,5083,10822,11:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekday,12,TRAIN,NS27/CC33/TE20,6862,5336,12198,12:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekday,13,TRAIN,NS27/CC33/TE20,4281,8848,13129,13:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekday,14,TRAIN,NS27/CC33/TE20,4055,5729,9784,14:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekday,15,TRAIN,NS27/CC33/TE20,4881,4147,9028,15:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekday,16,TRAIN,NS27/CC33/TE20,8220,4305,12525,16:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekday,17,TRAIN,NS27/CC33/TE20,20726,4619,25345,17:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekday,18,TRAIN,NS27/CC33/TE20,44939,5941,50880,18:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekday,19,TRAIN,NS27/CC33/TE20,20445,5056,25501,19:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekday,20,TRAIN,NS27/CC33/TE20,8527,3828,12355,20:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekday,21,TRAIN,NS27/CC33/TE20,4986,2599,7585,21:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekday,22,TRAIN,NS27/CC33/TE20,3240,1576,4816,22:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekday,23,TRAIN,NS27/CC33/TE20,1563,700,2263,23:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,0,TRAIN,NS27/CC33/TE20,59,324,383,00:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,5,TRAIN,NS27/CC33/TE20,156,15,171,05:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,6,TRAIN,NS27/CC33/TE20,766,707,1473,06:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,7,TRAIN,NS27/CC33/TE20,799,1367,2166,07:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,8,TRAIN,NS27/CC33/TE20,679,1497,2176,08:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,9,TRAIN,NS27/CC33/TE20,946,1789,2735,09:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,10,TRAIN,NS27/CC33/TE20,1637,2477,4114,10:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,11,TRAIN,NS27/CC33/TE20,2042,2777,4819,11:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,12,TRAIN,NS27/CC33/TE20,2399,3419,5818,12:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,13,TRAIN,NS27/CC33/TE20,2522,3877,6399,13:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,14,TRAIN,NS27/CC33/TE20,3042,4180,7222,14:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,15,TRAIN,NS27/CC33/TE20,3303,4607,7910,15:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,16,TRAIN,NS27/CC33/TE20,3787,5250,9037,16:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,17,TRAIN,NS27/CC33/TE20,3905,5795,9700,17:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,18,TRAIN,NS27/CC33/TE20,3497,5913,9410,18:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,19,TRAIN,NS27/CC33/TE20,3506,5366,8872,19:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,20,TRAIN,NS27/CC33/TE20,3336,4168,7504,20:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,21,TRAIN,NS27/CC33/TE20,2911,2829,5740,21:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,22,TRAIN,NS27/CC33/TE20,1713,1472,3185,22:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
+2026-08-01,weekends/holiday,23,TRAIN,NS27/CC33/TE20,760,770,1530,23:00,Marina Bay,Circle Line / North-South Line / Thomson-East Coast Line
 2026-08-01,weekday,0,TRAIN,NS28,2,11,13,00:00,Marina South Pier,North-South Line 
 2026-08-01,weekday,5,TRAIN,NS28,34,1,35,05:00,Marina South Pier,North-South Line 
 2026-08-01,weekday,6,TRAIN,NS28,186,1555,1741,06:00,Marina South Pier,North-South Line 

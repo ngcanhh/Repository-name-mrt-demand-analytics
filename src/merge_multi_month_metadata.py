@@ -58,6 +58,23 @@ def main() -> None:
         "Unknown station " + enriched["station_code"]
     )
     enriched["line_name"] = enriched["line_name"].fillna(prefix.map(line_by_prefix))
+
+    # The legacy reference workbook predates the 2026 Circle Line Stage 6
+    # station-code changes. Apply verified overrides for the new/interchange
+    # codes so the dashboard does not display misleading "Unknown station" labels.
+    station_code = enriched["station_code"].astype(str)
+    stage6_overrides = {
+        "CC30": ("Keppel", "Circle Line"),
+        "CC31": ("Cantonment", "Circle Line"),
+        "CC32": ("Prince Edward Road", "Circle Line"),
+        "CC33": ("Marina Bay", "Circle Line / North-South Line / Thomson-East Coast Line"),
+        "CC34": ("Bayfront", "Circle Line / Downtown Line"),
+    }
+    for code, (station_name, line_name) in stage6_overrides.items():
+        mask = station_code.str.split("/").apply(lambda parts: code in parts)
+        enriched.loc[mask, "station_name"] = station_name
+        enriched.loc[mask, "line_name"] = line_name
+
     enriched = enriched.drop(columns=["metadata_code"])
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
