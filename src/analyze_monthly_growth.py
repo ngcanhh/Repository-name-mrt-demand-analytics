@@ -20,16 +20,19 @@ def main() -> None:
         index=["station_code", "station_name", "line_name"],
         columns="month",
         values="total_volume",
-        fill_value=0,
     ).reset_index()
     pivot.columns.name = None
 
     months = sorted(monthly["month"].unique())
     previous_month, latest_month = months[0], months[-1]
+    has_previous = pivot[previous_month].notna()
+    has_latest = pivot[latest_month].notna()
     pivot["absolute_change"] = pivot[latest_month] - pivot[previous_month]
     pivot["percent_change"] = pivot.apply(
         lambda row: (row["absolute_change"] / row[previous_month] * 100)
-        if row[previous_month] != 0
+        if pd.notna(row[previous_month])
+        and pd.notna(row[latest_month])
+        and row[previous_month] != 0
         else None,
         axis=1,
     )
@@ -37,6 +40,7 @@ def main() -> None:
     # Growth is not reliable when the previous month is zero or when the
     # station name was inferred from a missing reference mapping.
     pivot["growth_quality"] = "reliable"
+    pivot.loc[~has_previous | ~has_latest, "growth_quality"] = "missing_month"
     pivot.loc[pivot[previous_month] == 0, "growth_quality"] = "zero_baseline"
     pivot.loc[pivot[latest_month] == 0, "growth_quality"] = "zero_latest"
     pivot.loc[

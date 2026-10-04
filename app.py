@@ -155,7 +155,6 @@ if len(trend_months) >= 2:
             index=["station_name", "line_name"],
             columns="month_label",
             values="total_volume",
-            fill_value=0,
         )
         .reset_index()
     )
@@ -168,7 +167,9 @@ if len(trend_months) >= 2:
         else None,
         axis=1,
     )
-    movement = station_monthly.dropna(subset=["percent_change"])
+    movement = station_monthly.dropna(
+        subset=[previous_label, latest_label, "percent_change"]
+    )
     increase, decrease = st.columns(2)
     with increase:
         st.markdown(f"**Largest increases: {previous_label} → {latest_label}**")
@@ -176,7 +177,8 @@ if len(trend_months) >= 2:
             movement.sort_values("percent_change", ascending=False)
             [["station_name", "line_name", "percent_change"]]
             .head(5)
-            .assign(percent_change=lambda frame: frame["percent_change"].round(1)),
+            .assign(percent_change=lambda frame: frame["percent_change"].round(1))
+            .rename(columns={"percent_change": "% change"}),
             width="stretch",
             hide_index=True,
         )
@@ -186,7 +188,8 @@ if len(trend_months) >= 2:
             movement.sort_values("percent_change")
             [["station_name", "line_name", "percent_change"]]
             .head(5)
-            .assign(percent_change=lambda frame: frame["percent_change"].round(1)),
+            .assign(percent_change=lambda frame: frame["percent_change"].round(1))
+            .rename(columns={"percent_change": "% change"}),
             width="stretch",
             hide_index=True,
         )
@@ -236,7 +239,9 @@ growth_view["percent_change"] = growth_view["percent_change"].round(2)
 st.dataframe(
     growth_view[
         ["station_name", "line_name", "percent_change", "absolute_change"]
-    ].sort_values("percent_change", ascending=False),
+    ]
+    .sort_values("percent_change", ascending=False)
+    .rename(columns={"percent_change": "% change", "absolute_change": "Activity change"}),
     width="stretch",
     hide_index=True,
 )

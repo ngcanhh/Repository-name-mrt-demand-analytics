@@ -179,10 +179,10 @@ EW31,Tuas Crescent,East-West Line,280116.0,305732.0,291767.0,11651.0,4.159348270
 NS7,Kranji,North-South Line ,1679539.0,1732054.0,1746228.0,66689.0,3.9706729048864005,reliable
 EW29,Joo Koon,East-West Line,958866.0,1037277.0,987246.0,28380.0,2.959746200198985,reliable
 EW15,Tanjong Pagar,East-West Line,2028205.0,2253829.0,2074149.0,45944.0,2.2652542519124053,reliable
-CE1/DT16,Bayfront,Circle Line Extension,2025235.0,792856.0,0.0,-2025235.0,-100.0,interchange_code
-NS27/CE2/TE20,Marina Bay,North-South Line ,317297.0,137275.0,0.0,-317297.0,-100.0,interchange_code
-CC30,Unknown station CC30,Circle Line (inferred),0.0,12078.0,10319.0,10319.0,,inferred_station
-CC31,Unknown station CC31,Circle Line (inferred),0.0,103825.0,140145.0,140145.0,,inferred_station
-CC32,Unknown station CC32,Circle Line (inferred),0.0,73926.0,107795.0,107795.0,,inferred_station
-CC34/DT16,Unknown station CC34/DT16,Circle Line (inferred),0.0,1402856.0,2312903.0,2312903.0,,inferred_station
-NS27/CC33/TE20,Marina Bay,North-South Line ,0.0,260199.0,387588.0,387588.0,,interchange_code
+CC30,Unknown station CC30,Circle Line (inferred),,12078.0,10319.0,,,inferred_station
+CC31,Unknown station CC31,Circle Line (inferred),,103825.0,140145.0,,,inferred_station
+CC32,Unknown station CC32,Circle Line (inferred),,73926.0,107795.0,,,inferred_station
+CC34/DT16,Unknown station CC34/DT16,Circle Line (inferred),,1402856.0,2312903.0,,,inferred_station
+CE1/DT16,Bayfront,Circle Line Extension,2025235.0,792856.0,,,,interchange_code
+NS27/CC33/TE20,Marina Bay,North-South Line ,,260199.0,387588.0,,,interchange_code
+NS27/CE2/TE20,Marina Bay,North-South Line ,317297.0,137275.0,,,,interchange_code
