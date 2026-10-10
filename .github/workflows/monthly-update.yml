@@ -31,6 +31,12 @@ jobs:
       - name: Validate processed data
         run: python src/validate_monthly_data.py
 
+      - name: Build baseline forecast
+        run: python src/forecast_monthly_activity.py
+
+      - name: Run analytics tests
+        run: python -m unittest discover -s tests -v
+
       - name: Commit updated outputs
         run: |
           git config user.name "github-actions[bot]"

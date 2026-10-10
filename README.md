@@ -63,6 +63,8 @@ The project also includes a Streamlit analytics application. The app recalculate
 
 The data pipeline includes automated quality checks for required columns, missing station metadata, negative volumes and the total-volume calculation. A GitHub Actions workflow can download the latest available month, rebuild the processed tables and publish the updated outputs.
 
+The repository also includes business-focused SQL queries, automated analytics tests and a transparent baseline forecast for the next month. The forecast is intentionally a simple linear-trend baseline because the current dataset contains only a short time series; it is not presented as a production prediction model.
+
 ### Live app
 
 [Open the Singapore MRT Demand Analytics app](https://repository-name-mrt-demand-analytics-kaxxjaulszrvzwrrkdat6s.streamlit.app/)
@@ -80,11 +82,17 @@ The app also supports downloading the currently filtered dataset as a CSV file.
 
 The monthly workflow runs on GitHub Actions and uses an `LTA_ACCOUNT_KEY` repository secret. It downloads the latest available LTA month, combines all tracked monthly files, enriches station metadata, recalculates month-over-month growth and validates the resulting dataset before committing updated outputs.
 
+### SQL analysis
+
+Business queries are stored in `sql/mrt_business_queries.sql` and cover monthly activity, peak hours by day type, latest-month station ranking and line-level month-over-month movement. They can be run with DuckDB against the processed CSV.
+
 ## Project structure
 
 ```text
 data/       Raw and processed data
 src/        Data download, cleaning, mapping and analysis scripts
+sql/        DuckDB business analysis queries
+tests/      Automated data and forecast tests
 outputs/    Summary tables and charts
 dashboard/  Power BI dashboard
 notebooks/  Exploratory notebooks
@@ -101,5 +109,5 @@ sql/        SQL analysis files
 ## Future improvements
 
 - Extend the historical window as additional LTA months become available.
-- Add anomaly detection and demand forecasting after a longer time series is available.
+- Replace the baseline forecast with a validated time-series model after a longer history is available.
 - Add weather and public holiday analysis.
