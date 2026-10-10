@@ -6,6 +6,7 @@ import streamlit as st
 
 
 DATA_PATH = Path("data/processed/mrt_station_demand_multi_month_enriched.csv")
+FORECAST_PATH = Path("outputs/tables/monthly_activity_forecast.csv")
 
 
 st.set_page_config(
@@ -23,7 +24,18 @@ def load_data() -> pd.DataFrame:
     return data
 
 
+@st.cache_data
+def load_forecast() -> pd.DataFrame:
+    if not FORECAST_PATH.exists():
+        return pd.DataFrame()
+    forecast = pd.read_csv(FORECAST_PATH)
+    forecast["year_month"] = pd.to_datetime(forecast["year_month"])
+    forecast["month_label"] = forecast["year_month"].dt.strftime("%Y-%m")
+    return forecast
+
+
 data = load_data()
+forecast = load_forecast()
 
 
 def format_compact(value: float) -> str:
@@ -134,6 +146,23 @@ fig_trend = px.line(
 )
 fig_trend.update_xaxes(type="category", categoryorder="category ascending")
 st.plotly_chart(fig_trend, width="stretch")
+
+if not forecast.empty:
+    st.subheader("Baseline next-month forecast")
+    fig_forecast = px.line(
+        forecast,
+        x="month_label",
+        y="activity",
+        color="record_type",
+        markers=True,
+        title="Actual activity and baseline forecast",
+        labels={"activity": "Activity", "month_label": "Month", "record_type": "Series"},
+    )
+    fig_forecast.update_xaxes(type="category", categoryorder="category ascending")
+    st.plotly_chart(fig_forecast, width="stretch")
+    st.caption(
+        "The forecast is a transparent linear-trend baseline and should not be treated as a production prediction model."
+    )
 
 st.subheader("Monthly movement alerts")
 trend_months = sorted(filtered["month_label"].unique())
