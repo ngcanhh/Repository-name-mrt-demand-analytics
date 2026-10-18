@@ -46,7 +46,10 @@ def format_compact(value: float) -> str:
     return f"{value:,.0f}"
 
 st.title("Singapore MRT Demand & Station Operations Analytics")
-st.caption("Interactive analysis using LTA DataMall passenger volume data")
+st.caption(
+    "Interactive analysis using LTA DataMall passenger volume data. "
+    "Activity = tap-ins + tap-outs; it measures station entries/exits, not unique passengers."
+)
 
 st.sidebar.header("Filters")
 months = sorted(data["month_label"].unique())
@@ -90,12 +93,42 @@ top_station = (
     .sort_values("total_volume", ascending=False)
     .iloc[0]["station_name"]
 )
+top_station_activity = (
+    filtered.groupby("station_name")["total_volume"].sum().max()
+)
 
 metric_1, metric_2, metric_3, metric_4 = st.columns(4)
 metric_1.metric("Total activity", format_compact(total_activity))
 metric_2.metric("Stations covered", f"{station_count:,}")
 metric_3.metric("Peak hour", f"{peak_hour:02d}:00")
-metric_4.metric("Top station", str(top_station)[:18])
+metric_4.metric(
+    "Top station",
+    f"{str(top_station)[:16]} ({format_compact(top_station_activity)})",
+)
+
+st.subheader("Key findings")
+line_summary_for_findings = (
+    filtered.groupby("line_name", as_index=False)["total_volume"]
+    .sum()
+    .sort_values("total_volume", ascending=False)
+)
+weekday_activity = filtered.loc[
+    filtered["day_type"].eq("weekday"), "total_volume"
+].sum()
+weekend_activity = filtered.loc[
+    filtered["day_type"].eq("weekends/holiday"), "total_volume"
+].sum()
+findings = [
+    f"**{peak_hour:02d}:00** is the highest-demand hour in the selected data ({format_compact(peak_by_hour['total_volume'].max())} activity).",
+    f"**{line_summary_for_findings.iloc[0]['line_name']}** has the highest activity among the selected lines ({format_compact(line_summary_for_findings.iloc[0]['total_volume'])}).",
+]
+if weekday_activity > weekend_activity > 0:
+    weekday_share = weekday_activity / (weekday_activity + weekend_activity) * 100
+    findings.append(
+        f"Weekday activity represents **{weekday_share:.1f}%** of selected activity, so operational review should prioritize weekday peaks."
+    )
+for finding in findings:
+    st.markdown(f"- {finding}")
 
 st.divider()
 
@@ -147,8 +180,33 @@ fig_trend = px.line(
 fig_trend.update_xaxes(type="category", categoryorder="category ascending")
 st.plotly_chart(fig_trend, width="stretch")
 
+coverage = (
+    filtered.groupby("month_label")
+    .agg(rows=("station_code", "size"), stations=("station_code", "nunique"))
+    .reset_index()
+    .sort_values("month_label")
+)
+if len(coverage) >= 2:
+    previous_coverage = coverage.iloc[-2]
+    latest_coverage = coverage.iloc[-1]
+    if latest_coverage["stations"] < previous_coverage["stations"] * 0.95:
+        st.warning(
+            f"The latest month ({latest_coverage['month_label']}) covers "
+            f"{int(latest_coverage['stations'])} stations versus "
+            f"{int(previous_coverage['stations'])} in the previous month. "
+            "Treat month-over-month decreases as provisional until LTA coverage is confirmed."
+        )
+    else:
+        st.caption(
+            f"Latest comparison coverage: {int(latest_coverage['stations'])} stations "
+            f"and {int(latest_coverage['rows']):,} station-hour records in {latest_coverage['month_label']}."
+        )
+
 if not forecast.empty:
     st.subheader("Baseline next-month forecast")
+    st.caption(
+        "Network-wide forecast based on all available months; it does not change with the selected line or day-type filters."
+    )
     fig_forecast = px.line(
         forecast,
         x="month_label",
@@ -197,10 +255,13 @@ if len(trend_months) >= 2:
         st.markdown(f"**Largest increases: {previous_label} → {latest_label}**")
         st.dataframe(
             movement.sort_values("percent_change", ascending=False)
-            [["station_name", "line_name", "percent_change"]]
+            [["station_name", "line_name", "percent_change", "absolute_change"]]
             .head(5)
-            .assign(percent_change=lambda frame: frame["percent_change"].round(1))
-            .rename(columns={"percent_change": "% change"}),
+            .assign(
+                percent_change=lambda frame: frame["percent_change"].round(1),
+                absolute_change=lambda frame: frame["absolute_change"].round(0),
+            )
+            .rename(columns={"percent_change": "% change", "absolute_change": "Activity change"}),
             width="stretch",
             hide_index=True,
         )
@@ -208,17 +269,20 @@ if len(trend_months) >= 2:
         st.markdown(f"**Largest decreases: {previous_label} → {latest_label}**")
         st.dataframe(
             movement.sort_values("percent_change")
-            [["station_name", "line_name", "percent_change"]]
+            [["station_name", "line_name", "percent_change", "absolute_change"]]
             .head(5)
-            .assign(percent_change=lambda frame: frame["percent_change"].round(1))
-            .rename(columns={"percent_change": "% change"}),
+            .assign(
+                percent_change=lambda frame: frame["percent_change"].round(1),
+                absolute_change=lambda frame: frame["absolute_change"].round(0),
+            )
+            .rename(columns={"percent_change": "% change", "absolute_change": "Activity change"}),
             width="stretch",
             hide_index=True,
         )
 else:
     st.info("Select at least two months to compare station movements.")
 
-st.subheader("Operational recommendations")
+st.subheader("Operational review areas")
 
 line_summary = (
     filtered.groupby("line_name", as_index=False)["total_volume"]
@@ -226,24 +290,17 @@ line_summary = (
     .sort_values("total_volume", ascending=False)
 )
 top_line = line_summary.iloc[0]["line_name"]
-weekday_activity = filtered.loc[
-    filtered["day_type"].eq("weekday"), "total_volume"
-].sum()
-weekend_activity = filtered.loc[
-    filtered["day_type"].eq("weekends/holiday"), "total_volume"
-].sum()
-
 recommendations = [
     f"Prioritize monitoring for **{top_line}**, which has the highest activity under the current filters.",
     f"Monitor **{top_station}**, currently the highest-activity station under the selected filters.",
 ]
 if weekday_activity > weekend_activity > 0:
     recommendations.append(
-        f"Prioritize weekday staffing around **{peak_hour:02d}:00**, the highest-demand period in the selected data."
+        f"Review staffing coverage and queue conditions around **{peak_hour:02d}:00** on weekdays; volume alone does not confirm a staffing shortage."
     )
 else:
     recommendations.append(
-        f"Focus resources around **{peak_hour:02d}:00**, the highest-demand period in the selected data."
+        f"Review operational conditions around **{peak_hour:02d}:00**; volume alone does not confirm a staffing shortage."
     )
 
 for recommendation in recommendations:
