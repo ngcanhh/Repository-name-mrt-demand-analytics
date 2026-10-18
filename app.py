@@ -125,7 +125,7 @@ findings = [
 if weekday_activity > weekend_activity > 0:
     weekday_share = weekday_activity / (weekday_activity + weekend_activity) * 100
     findings.append(
-        f"Weekday activity represents **{weekday_share:.1f}%** of selected activity, so operational review should prioritize weekday peaks."
+        f"Weekday activity represents **{weekday_share:.1f}%** of selected activity."
     )
 for finding in findings:
     st.markdown(f"- {finding}")
@@ -282,7 +282,7 @@ if len(trend_months) >= 2:
 else:
     st.info("Select at least two months to compare station movements.")
 
-st.subheader("Operational review areas")
+st.subheader("Recommended actions")
 
 line_summary = (
     filtered.groupby("line_name", as_index=False)["total_volume"]
@@ -291,16 +291,16 @@ line_summary = (
 )
 top_line = line_summary.iloc[0]["line_name"]
 recommendations = [
-    f"Prioritize monitoring for **{top_line}**, which has the highest activity under the current filters.",
-    f"Monitor **{top_station}**, currently the highest-activity station under the selected filters.",
+    f"Review capacity and disruption-readiness for **{top_line}**, the busiest selected line; high volume alone does not indicate an operational problem.",
+    f"Use **{top_station}** as the first station for a deeper review of crowding, interchange flows and service conditions.",
 ]
 if weekday_activity > weekend_activity > 0:
     recommendations.append(
-        f"Review staffing coverage and queue conditions around **{peak_hour:02d}:00** on weekdays; volume alone does not confirm a staffing shortage."
+        f"Check staffing coverage, queue conditions and service incidents around **{peak_hour:02d}:00** on weekdays, when demand is concentrated."
     )
 else:
     recommendations.append(
-        f"Review operational conditions around **{peak_hour:02d}:00**; volume alone does not confirm a staffing shortage."
+        f"Check staffing coverage, queue conditions and service incidents around **{peak_hour:02d}:00**; volume alone does not confirm a staffing shortage."
     )
 
 for recommendation in recommendations:
