@@ -2,11 +2,12 @@ from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
 import streamlit as st
 
+from src.forecast_monthly_activity import build_forecast
 
 DATA_PATH = Path("data/processed/mrt_station_demand_multi_month_enriched.csv")
-FORECAST_PATH = Path("outputs/tables/monthly_activity_forecast.csv")
 
 
 st.set_page_config(
@@ -24,18 +25,7 @@ def load_data() -> pd.DataFrame:
     return data
 
 
-@st.cache_data
-def load_forecast() -> pd.DataFrame:
-    if not FORECAST_PATH.exists():
-        return pd.DataFrame()
-    forecast = pd.read_csv(FORECAST_PATH)
-    forecast["year_month"] = pd.to_datetime(forecast["year_month"])
-    forecast["month_label"] = forecast["year_month"].dt.strftime("%Y-%m")
-    return forecast
-
-
 data = load_data()
-forecast = load_forecast()
 
 
 def format_compact(value: float) -> str:
@@ -168,17 +158,57 @@ with right:
     )
     st.plotly_chart(fig_station, width="stretch")
 
-trend = filtered.groupby("month_label", as_index=False)["total_volume"].sum()
-fig_trend = px.line(
-    trend,
-    x="month_label",
-    y="total_volume",
-    markers=True,
-    title="Monthly MRT Activity Trend",
-    labels={"total_volume": "Activity", "month_label": "Month"},
+st.subheader("Monthly activity and next-month forecast")
+trend = (
+    filtered.groupby("year_month", as_index=False)["total_volume"]
+    .sum()
+    .sort_values("year_month")
 )
-fig_trend.update_xaxes(type="category", categoryorder="category ascending")
+fig_trend = go.Figure()
+fig_trend.add_trace(go.Scatter(
+    x=trend["year_month"],
+    y=trend["total_volume"],
+    mode="lines+markers",
+    name="Actual activity",
+    line=dict(color="#0068c9"),
+    hovertemplate="%{x|%Y-%m}<br>Actual activity: %{y:,.0f}<extra></extra>",
+))
+consecutive_months = pd.date_range(
+    trend["year_month"].min(), trend["year_month"].max(), freq="MS"
+)
+has_forecast = len(trend) >= 3 and len(consecutive_months) == len(trend)
+if has_forecast:
+    # Reuse the pipeline model on exactly the same scope as the actual series.
+    scoped_forecast = build_forecast(filtered)
+    forecast_segment = scoped_forecast.iloc[-2:]
+    fig_trend.add_trace(go.Scatter(
+        x=forecast_segment["year_month"],
+        y=forecast_segment["activity"],
+        mode="lines+markers",
+        name="Baseline forecast",
+        line=dict(color="#e88b00", dash="dash"),
+        marker=dict(symbol=["circle", "diamond"], size=[6, 10]),
+        customdata=["Actual activity (forecast starting point)", "Baseline forecast"],
+        hovertemplate="%{x|%Y-%m}<br>%{customdata}: %{y:,.0f}<extra></extra>",
+    ))
+fig_trend.update_layout(
+    xaxis_title="Month",
+    yaxis_title="Activity (tap-ins + tap-outs)",
+    legend_title_text="Series",
+)
+fig_trend.update_xaxes(type="date", dtick="M1", tickformat="%Y-%m")
 st.plotly_chart(fig_trend, width="stretch")
+if has_forecast:
+    st.caption(
+        "Actual activity and forecast follow the selected months, lines and day types. "
+        "The dashed segment connects the latest actual month to a one-month-ahead "
+        "linear-trend baseline; it is exploratory and has not been validated for operational planning."
+    )
+else:
+    st.caption(
+        "Actual activity follows the selected filters. Select at least three consecutive "
+        "months to also display a next-month baseline forecast."
+    )
 
 coverage = (
     filtered.groupby("month_label")
@@ -201,26 +231,6 @@ if len(coverage) >= 2:
             f"Latest comparison coverage: {int(latest_coverage['stations'])} stations "
             f"and {int(latest_coverage['rows']):,} station-hour records in {latest_coverage['month_label']}."
         )
-
-if not forecast.empty:
-    st.subheader("Baseline next-month forecast")
-    st.caption(
-        "Network-wide forecast based on all available months; it does not change with the selected line or day-type filters."
-    )
-    fig_forecast = px.line(
-        forecast,
-        x="month_label",
-        y="activity",
-        color="record_type",
-        markers=True,
-        title="Actual activity and baseline forecast",
-        labels={"activity": "Activity", "month_label": "Month", "record_type": "Series"},
-    )
-    fig_forecast.update_xaxes(type="category", categoryorder="category ascending")
-    st.plotly_chart(fig_forecast, width="stretch")
-    st.caption(
-        "The forecast is a transparent linear-trend baseline and should not be treated as a production prediction model."
-    )
 
 st.subheader("Monthly movement alerts")
 trend_months = sorted(filtered["month_label"].unique())
