@@ -1,2 +1,2 @@
-rows,months,month_min,month_max,stations,lines,null_critical_values,quality_status
+rows,months,month_min,month_max,station_codes,line_labels,null_critical_values,quality_status
 29468,4,2026-06-01,2026-09-01,187,13,0,PASS

@@ -6,7 +6,7 @@
 SELECT
     year_month,
     SUM(total_volume) AS total_activity,
-    COUNT(DISTINCT station_code) AS stations_covered
+    COUNT(DISTINCT station_code) AS station_codes_covered
 FROM read_csv_auto('data/processed/mrt_station_demand_multi_month_enriched.csv')
 GROUP BY year_month
 ORDER BY year_month;
@@ -36,26 +36,19 @@ GROUP BY station_name, line_name
 ORDER BY activity DESC
 LIMIT 10;
 
--- 4. Latest month-over-month line movement
-WITH monthly AS (
-    SELECT
-        line_name,
-        year_month,
-        SUM(total_volume) AS activity
-    FROM read_csv_auto('data/processed/mrt_station_demand_multi_month_enriched.csv')
-    GROUP BY line_name, year_month
-), ranked AS (
-    SELECT
-        *,
-        LAG(activity) OVER (PARTITION BY line_name ORDER BY year_month) AS previous_activity
-    FROM monthly
-)
+-- 4. All consecutive month pairs by line, on the exported comparable-code cohort.
+-- Rebuild with: python src/analyze_monthly_growth.py
+-- Missing station codes and changed hour/day-type coverage are excluded.
 SELECT
+    previous_month,
+    latest_month,
     line_name,
-    year_month,
-    activity,
-    previous_activity,
-    ROUND(100.0 * (activity - previous_activity) / NULLIF(previous_activity, 0), 2) AS percent_change
-FROM ranked
-WHERE previous_activity IS NOT NULL
-ORDER BY year_month DESC, percent_change DESC;
+    COUNT(DISTINCT station_code) AS comparable_codes,
+    SUM(previous_activity) AS previous_activity,
+    SUM(latest_activity) AS latest_activity,
+    ROUND(100.0 * (SUM(latest_activity) - SUM(previous_activity))
+          / NULLIF(SUM(previous_activity), 0), 2) AS percent_change
+FROM read_csv_auto('outputs/tables/station_monthly_growth.csv')
+WHERE growth_quality IN ('comparable', 'zero_baseline')
+GROUP BY previous_month, latest_month, line_name
+ORDER BY latest_month DESC, percent_change DESC;

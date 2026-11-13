@@ -39,6 +39,13 @@ def main() -> None:
         raise ValueError(f"Null values in critical columns: {null_counts[null_counts > 0].to_dict()}")
 
     numeric_columns = ["hour", "tap_in_volume", "tap_out_volume", "total_volume"]
+    if data[numeric_columns].isna().any().any():
+        raise ValueError("Missing values in numeric demand columns")
+    if not data["hour"].between(0, 23).all() or not data["hour"].mod(1).eq(0).all():
+        raise ValueError("hour must contain whole hours from 0 to 23")
+    keys = ["year_month", "station_code", "day_type", "hour"]
+    if data.duplicated(keys).any():
+        raise ValueError("Duplicate month/station/day-type/hour records")
     if (data[numeric_columns] < 0).any().any():
         raise ValueError("Negative values found in numeric demand columns")
 
@@ -53,8 +60,8 @@ def main() -> None:
                 "months": data["year_month"].nunique(),
                 "month_min": data["year_month"].min(),
                 "month_max": data["year_month"].max(),
-                "stations": data["station_code"].nunique(),
-                "lines": data["line_name"].nunique(),
+                "station_codes": data["station_code"].nunique(),
+                "line_labels": data["line_name"].nunique(),
                 "null_critical_values": int(null_counts.sum()),
                 "quality_status": "PASS",
             }

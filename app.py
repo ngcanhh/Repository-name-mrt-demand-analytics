@@ -6,8 +6,10 @@ import plotly.graph_objects as go
 import streamlit as st
 
 from src.forecast_monthly_activity import build_forecast
+from src.analyze_monthly_growth import build_monthly_comparisons, monthly_coverage
+from src.operations_review import build_review_priorities, hourly_activity, station_activity
 
-DATA_PATH = Path("data/processed/mrt_station_demand_multi_month_enriched.csv")
+DATA_PATH = Path(__file__).resolve().parent / "data/processed/mrt_station_demand_multi_month_enriched.csv"
 
 
 st.set_page_config(
@@ -41,6 +43,10 @@ st.caption(
     "Activity = tap-ins + tap-outs; it measures station entries/exits, not unique passengers."
 )
 
+st.sidebar.markdown(
+    "[Read the case study](https://github.com/ngcanhh/Repository-name-mrt-demand-analytics/blob/main/docs/operations-case-study.md)"
+    " · [View source code](https://github.com/ngcanhh/Repository-name-mrt-demand-analytics)"
+)
 st.sidebar.header("Filters")
 months = sorted(data["month_label"].unique())
 selected_months = st.sidebar.multiselect(
@@ -51,7 +57,7 @@ selected_months = st.sidebar.multiselect(
 
 lines = sorted(data["line_name"].dropna().unique())
 selected_lines = st.sidebar.multiselect(
-    "MRT line",
+    "MRT/LRT line label",
     options=lines,
     default=lines,
 )
@@ -89,11 +95,20 @@ top_station_activity = (
 
 metric_1, metric_2, metric_3, metric_4 = st.columns(4)
 metric_1.metric("Total activity", format_compact(total_activity))
-metric_2.metric("Stations covered", f"{station_count:,}")
+metric_2.metric("Station codes covered", f"{station_count:,}")
 metric_3.metric("Peak hour", f"{peak_hour:02d}:00")
 metric_4.metric(
     "Top station",
-    f"{str(top_station)[:16]} ({format_compact(top_station_activity)})",
+    str(top_station),
+    help=f"Recorded activity: {top_station_activity:,.0f}",
+)
+metric_4.caption(f"{format_compact(top_station_activity)} recorded activity")
+
+scope_label = ", ".join(sorted(filtered["month_label"].unique()))
+st.caption(
+    f"Selected months: {scope_label}. KPIs, hourly activity and the top 10 combine all "
+    "selected months, lines and day types. Monthly trends show each month separately. "
+    "Station codes are source identifiers, not a count of unique physical stations."
 )
 
 st.subheader("Key findings")
@@ -125,38 +140,38 @@ st.divider()
 left, right = st.columns(2)
 
 with left:
-    hourly = (
-        filtered.groupby(["hour", "day_type"], as_index=False)["total_volume"]
-        .sum()
-    )
+    hourly = hourly_activity(filtered)
     fig_hourly = px.line(
         hourly,
         x="hour",
         y="total_volume",
         color="day_type",
         markers=True,
-        title="MRT Activity by Hour",
+        title="MRT/LRT Activity by Hour",
         labels={"total_volume": "Tap-in + tap-out activity", "hour": "Hour"},
     )
     st.plotly_chart(fig_hourly, width="stretch")
 
 with right:
-    station_summary = (
-        filtered.groupby(["station_name", "line_name"], as_index=False)["total_volume"]
-        .sum()
-        .sort_values("total_volume", ascending=False)
-        .head(10)
-    )
+    station_summary = station_activity(filtered).head(10)
     fig_station = px.bar(
         station_summary.sort_values("total_volume"),
         x="total_volume",
         y="station_name",
         color="line_name",
         orientation="h",
-        title="Top 10 MRT Stations",
-        labels={"total_volume": "Activity", "station_name": "Station"},
+        title="Top 10 MRT/LRT Stations by Recorded Activity",
+        hover_data=["station_codes"],
+        category_orders={"station_name": station_summary["station_name"].tolist()},
+        labels={"total_volume": "Activity", "station_name": "Station", "line_name": "Line label"},
     )
     st.plotly_chart(fig_station, width="stretch")
+
+st.caption(
+    "Both charts above sum every selected month; they do not show month-over-month growth. "
+    "Hourly values are monthly totals by day type, not activity per individual day. "
+    "The top 10 combines source codes that share the same station name."
+)
 
 st.subheader("Monthly activity and next-month forecast")
 trend = (
@@ -210,87 +225,101 @@ else:
         "months to also display a next-month baseline forecast."
     )
 
-coverage = (
-    filtered.groupby("month_label")
-    .agg(rows=("station_code", "size"), stations=("station_code", "nunique"))
-    .reset_index()
-    .sort_values("month_label")
+st.subheader("Monthly coverage and comparable growth")
+st.caption(
+    "Recorded totals include all available rows in each selected month. Growth compares "
+    "only station codes present in both months with matching hour/day-type coverage. "
+    "Each pair has its own comparable cohort; monthly totals are not adjusted for the "
+    "number of weekdays, weekends or holidays."
 )
-if len(coverage) >= 2:
-    previous_coverage = coverage.iloc[-2]
-    latest_coverage = coverage.iloc[-1]
-    if latest_coverage["stations"] < previous_coverage["stations"] * 0.95:
-        st.warning(
-            f"The latest month ({latest_coverage['month_label']}) covers "
-            f"{int(latest_coverage['stations'])} stations versus "
-            f"{int(previous_coverage['stations'])} in the previous month. "
-            "Treat month-over-month decreases as provisional until LTA coverage is confirmed."
-        )
-    else:
-        st.caption(
-            f"Latest comparison coverage: {int(latest_coverage['stations'])} stations "
-            f"and {int(latest_coverage['rows']):,} station-hour records in {latest_coverage['month_label']}."
-        )
+coverage = monthly_coverage(filtered)
+st.dataframe(
+    coverage.rename(columns={"month_label": "Month", "station_codes": "Station codes",
+                             "records": "Records", "recorded_activity": "Recorded activity"}),
+    hide_index=True, width="stretch",
+)
+movement, comparisons = build_monthly_comparisons(filtered)
+if not comparisons.empty:
+    comparison_display = comparisons[[
+        "previous_month", "latest_month", "common_codes", "comparable_codes",
+        "previous_comparable_activity", "latest_comparable_activity", "percent_change",
+    ]].rename(columns={
+        "previous_month": "From", "latest_month": "To", "common_codes": "Codes in both months",
+        "comparable_codes": "Comparable codes", "previous_comparable_activity": "Previous activity",
+        "latest_comparable_activity": "Latest activity", "percent_change": "Change (%)",
+    })
+    st.dataframe(comparison_display.round({"Change (%)": 2}), hide_index=True, width="stretch")
+    st.download_button(
+        "Download all monthly comparisons", comparisons.to_csv(index=False).encode("utf-8"),
+        "mrt_monthly_comparisons.csv", "text/csv",
+    )
 
-st.subheader("Monthly movement alerts")
-trend_months = sorted(filtered["month_label"].unique())
-if len(trend_months) >= 2:
-    previous_label, latest_label = trend_months[-2:]
-    station_monthly = (
-        filtered.groupby(["month_label", "station_name", "line_name"], as_index=False)[
-            "total_volume"
-        ]
-        .sum()
-        .pivot_table(
-            index=["station_name", "line_name"],
-            columns="month_label",
-            values="total_volume",
-        )
-        .reset_index()
+st.subheader("Monthly station movements")
+if not comparisons.empty:
+    labels = [f"{row.previous_month} → {row.latest_month}" for row in comparisons.itertuples()]
+    selected_pair = st.selectbox("Month-over-month comparison", labels, index=len(labels) - 1)
+    summary = comparisons.iloc[labels.index(selected_pair)]
+    pair = movement[
+        movement["previous_month"].eq(summary["previous_month"])
+        & movement["latest_month"].eq(summary["latest_month"])
+    ]
+    st.caption(
+        f"{int(summary['comparable_codes'])} comparable codes out of "
+        f"{int(summary['previous_codes'])} previous / {int(summary['latest_codes'])} latest codes. "
+        f"Excluded: {int(summary['previous_only_codes'])} previous-only, "
+        f"{int(summary['latest_only_codes'])} latest-only, and "
+        f"{int(summary['changed_hour_coverage_codes'])} with changed hour/day-type coverage. "
+        "Rankings are by source code; codes sharing a station name remain separate here. "
+        "A zero baseline has no percentage change."
     )
-    station_monthly["absolute_change"] = (
-        station_monthly[latest_label] - station_monthly[previous_label]
-    )
-    station_monthly["percent_change"] = station_monthly.apply(
-        lambda row: row["absolute_change"] / row[previous_label] * 100
-        if row[previous_label] > 0
-        else None,
-        axis=1,
-    )
-    movement = station_monthly.dropna(
-        subset=[previous_label, latest_label, "percent_change"]
-    )
+    comparable = pair[pair["growth_quality"].eq("comparable")]
     increase, decrease = st.columns(2)
-    with increase:
-        st.markdown(f"**Largest increases: {previous_label} → {latest_label}**")
-        st.dataframe(
-            movement.sort_values("percent_change", ascending=False)
-            [["station_name", "line_name", "percent_change", "absolute_change"]]
-            .head(5)
-            .assign(
-                percent_change=lambda frame: frame["percent_change"].round(1),
-                absolute_change=lambda frame: frame["absolute_change"].round(0),
-            )
-            .rename(columns={"percent_change": "% change", "absolute_change": "Activity change"}),
-            width="stretch",
-            hide_index=True,
-        )
-    with decrease:
-        st.markdown(f"**Largest decreases: {previous_label} → {latest_label}**")
-        st.dataframe(
-            movement.sort_values("percent_change")
-            [["station_name", "line_name", "percent_change", "absolute_change"]]
-            .head(5)
-            .assign(
-                percent_change=lambda frame: frame["percent_change"].round(1),
-                absolute_change=lambda frame: frame["absolute_change"].round(0),
-            )
-            .rename(columns={"percent_change": "% change", "absolute_change": "Activity change"}),
-            width="stretch",
-            hide_index=True,
-        )
+    for column, title, rows in [
+        (increase, "Largest increases", comparable[comparable["percent_change"] > 0]
+         .sort_values(["percent_change", "station_code"], ascending=[False, True]).head(5)),
+        (decrease, "Largest decreases", comparable[comparable["percent_change"] < 0]
+         .sort_values(["percent_change", "station_code"]).head(5)),
+    ]:
+        with column:
+            st.markdown(f"**{title}: {selected_pair}**")
+            if rows.empty:
+                st.info("No comparable station codes in this direction.")
+            else:
+                st.dataframe(
+                    rows[["station_code", "station_name", "percent_change", "absolute_change"]]
+                    .round({"percent_change": 1, "absolute_change": 0})
+                    .rename(columns={"station_code": "Code", "station_name": "Station",
+                                     "percent_change": "% change", "absolute_change": "Activity change"}),
+                    width="stretch", hide_index=True,
+                )
+    st.download_button(
+        "Download station movements for this pair", pair.to_csv(index=False).encode("utf-8"),
+        "mrt_station_movements.csv", "text/csv",
+    )
 else:
-    st.info("Select at least two months to compare station movements.")
+    st.info("Select at least two consecutive calendar months to compare station movements. "
+            "Months separated by a gap are not treated as month-over-month growth.")
+
+st.subheader("Stations and hours to review")
+st.caption(
+    "Priorities use recorded activity across every selected month. "
+    "Peak-hour share is the fraction of a station's weekday activity at that hour "
+    "(or selected day types if weekdays are absent). Higher volume suggests where to "
+    "investigate; it does not establish crowding or a staffing shortage."
+)
+priorities = build_review_priorities(filtered)
+priority_display = priorities[[
+    "review_rank", "station_name", "total_volume", "months_observed", "peak_day_type",
+    "peak_hour", "peak_hour_share_pct",
+]].copy()
+priority_display["peak_hour"] = priority_display["peak_hour"].map(lambda hour: f"{hour:02d}:00–{hour + 1:02d}:00")
+st.dataframe(
+    priority_display.round({"peak_hour_share_pct": 1}).rename(columns={
+        "review_rank": "Priority", "station_name": "Station", "total_volume": "Recorded activity",
+        "months_observed": "Months observed", "peak_day_type": "Peak day type",
+        "peak_hour": "Review window", "peak_hour_share_pct": "Peak-hour share (%)",
+    }), hide_index=True, width="stretch",
+)
 
 st.subheader("Recommended actions")
 

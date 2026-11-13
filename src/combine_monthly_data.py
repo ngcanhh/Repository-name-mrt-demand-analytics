@@ -49,7 +49,19 @@ def main() -> None:
     data["station_code"] = data["station_code"].str.strip().str.upper()
     data["total_volume"] = data["tap_in_volume"] + data["tap_out_volume"]
     data["hour_label"] = data["hour"].astype(str).str.zfill(2) + ":00"
+    # A downloaded archive may be absent from a local checkout. Preserve whole
+    # processed months with no raw replacement rather than silently losing them.
+    if OUTPUT_PATH.exists():
+        previous = pd.read_csv(OUTPUT_PATH)
+        previous["year_month"] = pd.to_datetime(previous["year_month"])
+        retained = previous[~previous["year_month"].isin(data["year_month"].unique())]
+        if not retained.empty:
+            data = pd.concat([data, retained[data.columns]], ignore_index=True)
+            print("Retained processed months without local raw files:",
+                  sorted(retained["year_month"].dt.strftime("%Y-%m").unique()))
     data = data.drop_duplicates()
+    if data.duplicated(["year_month", "station_code", "day_type", "hour"]).any():
+        raise ValueError("Conflicting records for a month/station/day-type/hour key")
     data = data.sort_values(["year_month", "station_code", "day_type", "hour"])
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)

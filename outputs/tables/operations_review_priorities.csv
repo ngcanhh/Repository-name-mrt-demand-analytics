@@ -1,0 +1,6 @@
+review_rank,station_name,total_volume,station_codes,line_name,months_observed,activity_share_pct,peak_day_type,peak_hour,peak_hour_activity,peak_hour_share_pct
+1,Jurong East,16575822,EW24/NS1,East-West Line,4,2.3605330886600844,weekday,18,1706611,13.997161053498978
+2,Orchard,15424515,TE14/NS22,Thomson-East Coast Line,4,2.196577523216272,weekday,18,1164932,11.235763023250609
+3,Woodlands,14325219,NS9/TE2,North-South Line,4,2.040028751020741,weekday,18,1264134,11.828755369746505
+4,Serangoon,13704502,NE12/CC13,North East Line,4,1.9516335560678861,weekday,18,1211609,12.049540388434675
+5,Newton,13203808,NS21/DT11,North-South Line,4,1.8803306213299544,weekday,18,1218055,12.395717340744104

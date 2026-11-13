@@ -1,0 +1,4 @@
+previous_month,latest_month,previous_codes,latest_codes,common_codes,comparable_codes,previous_only_codes,latest_only_codes,changed_hour_coverage_codes,previous_recorded_activity,latest_recorded_activity,previous_comparable_activity,latest_comparable_activity,absolute_change,percent_change
+2026-06,2026-07,182,187,182,177,0,5,5,161594717,184231607,160587478,181212234,20624756,12.843315217890153
+2026-07,2026-08,187,185,185,175,2,0,10,184231607,182552748,180072169,179373862,-698307,-0.38779285209809405
+2026-08,2026-09,185,185,185,178,0,0,7,182552748,173827649,180186538,171512565,-8673973,-4.813885152729889
