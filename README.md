@@ -2,7 +2,7 @@
 
 Analyse LTA MRT/LRT station activity with Python, SQL, Power BI and Streamlit to identify high-volume stations, peak hours and locations to prioritise for operational review.
 
-[GitHub repository](https://github.com/ngcanhh/Repository-name-mrt-demand-analytics) · [Live Streamlit app](https://repository-name-mrt-demand-analytics-kaxxjaulszrvzwrrkdat6s.streamlit.app/) · [Operational case study](docs/operations-case-study.md) · [CV description](docs/cv-bullets.md) · [Python source](src/) · [SQL queries](sql/mrt_business_queries.sql)
+[Live Streamlit app](https://repository-name-mrt-demand-analytics-kaxxjaulszrvzwrrkdat6s.streamlit.app/) · [Operational case study](docs/operations-case-study.md)
 
 ## Four month analysis
 
@@ -39,6 +39,8 @@ The monthly chart retains an exploratory one-month-ahead linear baseline when at
 ![Streamlit hourly activity and top 10 using all four selected months](outputs/figures/streamlit_four_month_overview.jpg)
 
 ## Run locally
+
+To explore the dashboard, open the live Streamlit app above; no installation is needed. The instructions below run a separate copy on your own computer so you can edit the code, try changes and reproduce the analysis. Running it locally does not update the live app.
 
 Use Python 3.12 from the repository root:
 
