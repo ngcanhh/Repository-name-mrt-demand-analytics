@@ -62,7 +62,7 @@ python src/build_operations_case_study.py
 python -m unittest discover -s tests -v
 ```
 
-The case study prose and CV metrics describe the June–September 2026 snapshot. When extending the dataset, regenerate the outputs and refresh those written numbers before sharing them. The live app reflects the source deployed on Streamlit; local changes appear there after publication.
+The case study describes the June–September 2026 snapshot. When extending the dataset, regenerate the outputs and refresh those written numbers before sharing them. The live app reflects the source deployed on Streamlit; local changes appear there after publication.
 
 ## Data and outputs
 
@@ -109,7 +109,7 @@ tests/       Data invariants and comparison/filter regression tests
 data/        Raw inputs, station reference files and processed CSVs
 outputs/     Analysis tables, figures and the baseline forecast
 dashboard/   Power BI dashboard
-docs/        Operational case study and CV description
+docs/        Operational case study
 ```
 
 ## Interpretation limits
